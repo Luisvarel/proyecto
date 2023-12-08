@@ -35,22 +35,11 @@ public class door extends Thread {
     @Override
     public void run() {
         int mil = 0;
-        if (lado == 1) {
-            //derecha   
-            if (abierta) {
-                mil = 400;
-                fondo.setVisible(true);
-            } else {
-                mil = 500;
-            }
-        } else if (lado == 0) {
-            //izquierda
-            if (abierta) {
-                mil = 400;
-                fondo.setVisible(true);
-            } else {
-                mil = 500;
-            }
+        if (abierta) {
+            mil = 400;
+            fondo.setVisible(true);
+        } else {
+            mil = 500;
         }
         ImageIcon temp = (ImageIcon) puerta.getIcon();
         puerta.setIcon(new ImageIcon(gif));

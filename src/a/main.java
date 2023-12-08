@@ -49,6 +49,8 @@ public class main extends javax.swing.JFrame {
         puntero_noche_3.setText("");
         puntero_noche_4.setText("");
         puntero_noche_perso.setText("");
+        gif_camara_entrada.setVisible(false);
+        gif_camara_salida.setVisible(false);
         if (puerta_d) {
             fondo_puerta_derecha.setVisible(false);
         }
@@ -74,6 +76,7 @@ public class main extends javax.swing.JFrame {
         label_puerta_izqui = new javax.swing.JLabel();
         fondo_puerta_derecha = new javax.swing.JPanel();
         Label_puerta_dere = new javax.swing.JLabel();
+        nariz = new javax.swing.JLabel();
         light_derecha = new javax.swing.JLabel();
         door_derecha = new javax.swing.JLabel();
         light_izquierda = new javax.swing.JLabel();
@@ -220,9 +223,9 @@ public class main extends javax.swing.JFrame {
         Dining_area = new javax.swing.JPanel();
         jLabel39 = new javax.swing.JLabel();
         gif_camara_salida = new javax.swing.JPanel();
-        jLabel55 = new javax.swing.JLabel();
+        salidaC = new javax.swing.JLabel();
         gif_camara_entrada = new javax.swing.JPanel();
-        jLabel52 = new javax.swing.JLabel();
+        entradaC = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
@@ -303,6 +306,13 @@ public class main extends javax.swing.JFrame {
         );
 
         oficina.add(fondo_puerta_derecha, new org.netbeans.lib.awtextra.AbsoluteConstraints(800, 0, 130, 580));
+
+        nariz.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                narizMouseClicked(evt);
+            }
+        });
+        oficina.add(nariz, new org.netbeans.lib.awtextra.AbsoluteConstraints(420, 180, 20, 20));
 
         light_derecha.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -1024,6 +1034,11 @@ public class main extends javax.swing.JFrame {
         jLabel49.setBackground(new java.awt.Color(255, 255, 255));
         jLabel49.setForeground(new java.awt.Color(255, 255, 255));
         jLabel49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/closecam.png"))); // NOI18N
+        jLabel49.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel49MouseEntered(evt);
+            }
+        });
         camara.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 510, -1, -1));
 
         fondo_tiempo1.setBackground(new java.awt.Color(0, 0, 0));
@@ -1260,13 +1275,17 @@ public class main extends javax.swing.JFrame {
         gif_camara_salida.setMinimumSize(new java.awt.Dimension(1003, 584));
         gif_camara_salida.setPreferredSize(new java.awt.Dimension(1003, 584));
         gif_camara_salida.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        gif_camara_salida.add(jLabel55, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        salidaC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gif_monitor/monitorcerrar.gif"))); // NOI18N
+        gif_camara_salida.add(salidaC, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
 
         gif_camara_entrada.setBackground(new java.awt.Color(0, 0, 0));
         gif_camara_entrada.setMinimumSize(new java.awt.Dimension(1003, 584));
         gif_camara_entrada.setPreferredSize(new java.awt.Dimension(1003, 584));
         gif_camara_entrada.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-        gif_camara_entrada.add(jLabel52, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        entradaC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gif_monitor/monitor.gif"))); // NOI18N
+        gif_camara_entrada.add(entradaC, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1775,8 +1794,35 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel1MouseClicked
 
     private void jLabel50MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel50MouseEntered
-
+        //barra de la camara en oficina
+        //abrir camaras
+        oficina.setVisible(false);
+        if (!en_camaras) {
+            audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\camaradown.wav");
+            gif_cambio_CO g = new gif_cambio_CO(gif_camara_entrada, entradaC, camara);
+            g.start();
+            a.start();
+            en_camaras = true;
+        }
     }//GEN-LAST:event_jLabel50MouseEntered
+
+    private void jLabel49MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel49MouseEntered
+        //barra de la camara en camaras
+        //cerrando camaras
+        camara.setVisible(false);
+        if (en_camaras) {
+            audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\camaraup.wav");
+            gif_cambio_CO g = new gif_cambio_CO(gif_camara_salida, salidaC, oficina);
+            g.start();
+            a.start();
+            en_camaras = false;
+        }
+    }//GEN-LAST:event_jLabel49MouseEntered
+
+    private void narizMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_narizMouseClicked
+      audio a=new audio("");
+      
+    }//GEN-LAST:event_narizMouseClicked
     public static boolean iniciar(String usuario, String contra) {
         AdminJugador aj = new AdminJugador("FiveNights.fnaf");
         aj.cargarArchivo();
@@ -1836,6 +1882,11 @@ public class main extends javax.swing.JFrame {
     false es cerrado
     true es abierto
      */
+    boolean en_camaras = false;
+    /*
+    en_camaras es true cuando las camaras estan abiertas
+    en_camaras es false cuando las camaras estan cerradas
+     */
     boolean luz_derecho = false;
     boolean luz_izquierda = false;
     // Variables declaration - do not modify//GEN-BEGIN:variables
@@ -1868,6 +1919,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JPanel east_hall;
     private javax.swing.JPanel east_hall_corner;
     private javax.swing.JPanel elige;
+    private javax.swing.JLabel entradaC;
     private javax.swing.JPanel fondo;
     private javax.swing.JPanel fondo_crear_perfil;
     private javax.swing.JPanel fondo_iniciar_sesion;
@@ -1935,10 +1987,8 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
     private javax.swing.JLabel jLabel51;
-    private javax.swing.JLabel jLabel52;
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
-    private javax.swing.JLabel jLabel55;
     private javax.swing.JLabel jLabel56;
     private javax.swing.JLabel jLabel57;
     private javax.swing.JLabel jLabel58;
@@ -1966,6 +2016,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel light_izquierda;
     private javax.swing.JPanel menu;
     private javax.swing.JPanel menu_jugador;
+    private javax.swing.JLabel nariz;
     private javax.swing.JPanel noche_1;
     private javax.swing.JPanel noche_2;
     private javax.swing.JPanel noche_3;
@@ -1989,6 +2040,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel puntero_noche_perso;
     private javax.swing.JLabel puntero_s1;
     private javax.swing.JPanel restrooms;
+    private javax.swing.JLabel salidaC;
     private javax.swing.JPanel show_stage;
     private javax.swing.JPanel supply_closet;
     private javax.swing.JLabel texto_j1;
