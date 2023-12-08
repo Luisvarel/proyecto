@@ -1549,6 +1549,8 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel35MouseExited
 
     private void cam1AMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam1AMouseClicked
+        audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        a.start();
         show_stage.setVisible(true);
         restrooms.setVisible(false);
         kitchen.setVisible(false);
@@ -1564,6 +1566,8 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam1AMouseClicked
 
     private void cam1BMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam1BMouseClicked
+        audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(false);
         kitchen.setVisible(false);
@@ -1579,6 +1583,8 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam1BMouseClicked
 
     private void cam5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam5MouseClicked
+        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(false);
         kitchen.setVisible(false);
@@ -1594,6 +1600,8 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam5MouseClicked
 
     private void cam1cMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam1cMouseClicked
+        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(false);
         kitchen.setVisible(false);
@@ -1609,6 +1617,8 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam1cMouseClicked
 
     private void cam3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam3MouseClicked
+        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(false);
         kitchen.setVisible(false);
@@ -1624,6 +1634,8 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam3MouseClicked
 
     private void cam2aMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam2aMouseClicked
+        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(false);
         kitchen.setVisible(false);
@@ -1639,6 +1651,8 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam2aMouseClicked
 
     private void cam2bMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam2bMouseClicked
+        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(false);
         kitchen.setVisible(false);
@@ -1654,6 +1668,8 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam2bMouseClicked
 
     private void cam4bMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam4bMouseClicked
+        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(false);
         kitchen.setVisible(false);
@@ -1669,6 +1685,8 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam4bMouseClicked
 
     private void cam4AMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam4AMouseClicked
+        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(false);
         kitchen.setVisible(false);
@@ -1684,6 +1702,8 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam4AMouseClicked
 
     private void cam6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam6MouseClicked
+        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(false);
         kitchen.setVisible(true);
@@ -1699,6 +1719,8 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam6MouseClicked
 
     private void cam7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam7MouseClicked
+        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(true);
         kitchen.setVisible(false);
@@ -1716,14 +1738,17 @@ public class main extends javax.swing.JFrame {
     private void door_izquierdaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_door_izquierdaMouseClicked
 //puerta izquierda
         door puerta;
+        audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\door.wav");
         if (puerta_i) {
             //abierta
             puerta = new door(0, fondo_puerta_iquierda, label_puerta_izqui, puerta_i, "C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\puerta izquierda\\cerrar puerta izqui.gif");
+            a.start();
             puerta.start();
             puerta_i = false;
         } else if (!puerta_i) {
             //cerrada
             puerta = new door(0, fondo_puerta_iquierda, label_puerta_izqui, puerta_i, "C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\puerta izquierda\\leftdooropen.gif");
+            a.start();
             puerta.start();
             puerta_i = true;
         }
@@ -1820,8 +1845,8 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel49MouseEntered
 
     private void narizMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_narizMouseClicked
-      audio a=new audio("");
-      
+        audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\freddynose.wav");
+        a.start();
     }//GEN-LAST:event_narizMouseClicked
     public static boolean iniciar(String usuario, String contra) {
         AdminJugador aj = new AdminJugador("FiveNights.fnaf");
