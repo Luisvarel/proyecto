@@ -4,6 +4,8 @@
  */
 package a;
 
+import javax.imageio.ImageIO;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 
 /**
@@ -18,6 +20,8 @@ public class main extends javax.swing.JFrame {
     public main() {
         initComponents();
         this.pack();
+        golden_cam.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\camaras\\cam2bempty.png"));
+        label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\oficina\\office.jpg"));
         menu_jugador.setVisible(false);
         e_puntero_s.setText("");
         menu.setVisible(false);
@@ -81,10 +85,10 @@ public class main extends javax.swing.JFrame {
         door_derecha = new javax.swing.JLabel();
         light_izquierda = new javax.swing.JLabel();
         door_izquierda = new javax.swing.JLabel();
-        jLabel51 = new javax.swing.JLabel();
-        jLabel37 = new javax.swing.JLabel();
+        fondo_botones_derecho = new javax.swing.JLabel();
+        fondo_botones_izqui = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
-        jLabel30 = new javax.swing.JLabel();
+        label_oficina = new javax.swing.JLabel();
         elige = new javax.swing.JPanel();
         jPanel7 = new javax.swing.JPanel();
         jLabel5 = new javax.swing.JLabel();
@@ -200,10 +204,15 @@ public class main extends javax.swing.JFrame {
         cam4A = new javax.swing.JLabel();
         cam6 = new javax.swing.JLabel();
         cam7 = new javax.swing.JLabel();
-        show_stage = new javax.swing.JPanel();
-        jLabel34 = new javax.swing.JLabel();
+        bateria = new javax.swing.JPanel();
+        titulo_camara1 = new javax.swing.JLabel();
+        titulo_camara2 = new javax.swing.JLabel();
+        titulo_camara3 = new javax.swing.JLabel();
+        titulo_camara4 = new javax.swing.JLabel();
         restrooms = new javax.swing.JPanel();
         jLabel47 = new javax.swing.JLabel();
+        show_stage = new javax.swing.JPanel();
+        jLabel34 = new javax.swing.JLabel();
         kitchen = new javax.swing.JPanel();
         jLabel48 = new javax.swing.JLabel();
         east_hall_corner = new javax.swing.JPanel();
@@ -211,7 +220,7 @@ public class main extends javax.swing.JFrame {
         east_hall = new javax.swing.JPanel();
         jLabel45 = new javax.swing.JLabel();
         west_hall_corner = new javax.swing.JPanel();
-        jLabel44 = new javax.swing.JLabel();
+        golden_cam = new javax.swing.JLabel();
         west_hall = new javax.swing.JPanel();
         jLabel43 = new javax.swing.JLabel();
         supply_closet = new javax.swing.JPanel();
@@ -342,11 +351,11 @@ public class main extends javax.swing.JFrame {
         });
         oficina.add(door_izquierda, new org.netbeans.lib.awtextra.AbsoluteConstraints(20, 240, 30, 40));
 
-        jLabel51.setIcon(new javax.swing.ImageIcon(getClass().getResource("/oficina/boton_puerta_derecha.png"))); // NOI18N
-        oficina.add(jLabel51, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 220, 70, 160));
+        fondo_botones_derecho.setIcon(new javax.swing.ImageIcon(getClass().getResource("/oficina/boton_puerta_derecha.png"))); // NOI18N
+        oficina.add(fondo_botones_derecho, new org.netbeans.lib.awtextra.AbsoluteConstraints(930, 220, 70, 160));
 
-        jLabel37.setIcon(new javax.swing.ImageIcon(getClass().getResource("/oficina/leftdoorbuttons.png"))); // NOI18N
-        oficina.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 210, 70, 170));
+        fondo_botones_izqui.setIcon(new javax.swing.ImageIcon(getClass().getResource("/oficina/leftdoorbuttons.png"))); // NOI18N
+        oficina.add(fondo_botones_izqui, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 210, 70, 170));
 
         jLabel50.setBackground(new java.awt.Color(255, 255, 255));
         jLabel50.setForeground(new java.awt.Color(255, 255, 255));
@@ -358,8 +367,8 @@ public class main extends javax.swing.JFrame {
         });
         oficina.add(jLabel50, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 510, -1, -1));
 
-        jLabel30.setIcon(new javax.swing.ImageIcon(getClass().getResource("/oficina/office.jpg"))); // NOI18N
-        oficina.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+        label_oficina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/oficina/office.jpg"))); // NOI18N
+        oficina.add(label_oficina, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
 
         elige.setBackground(new java.awt.Color(0, 0, 0));
         elige.setMinimumSize(new java.awt.Dimension(1003, 584));
@@ -1183,13 +1192,36 @@ public class main extends javax.swing.JFrame {
 
         camara.add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 80, 420, 500));
 
-        show_stage.setOpaque(false);
-        show_stage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        bateria.setOpaque(false);
+        bateria.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam1a.jpg"))); // NOI18N
-        show_stage.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+        titulo_camara1.setBackground(new java.awt.Color(255, 255, 255));
+        titulo_camara1.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
+        titulo_camara1.setForeground(new java.awt.Color(255, 255, 255));
+        titulo_camara1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        bateria.add(titulo_camara1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 80, 32));
 
-        camara.add(show_stage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+        titulo_camara2.setBackground(new java.awt.Color(255, 255, 255));
+        titulo_camara2.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
+        titulo_camara2.setForeground(new java.awt.Color(255, 255, 255));
+        titulo_camara2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        titulo_camara2.setText("Power left:");
+        bateria.add(titulo_camara2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 24, 176, 32));
+
+        titulo_camara3.setBackground(new java.awt.Color(255, 255, 255));
+        titulo_camara3.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
+        titulo_camara3.setForeground(new java.awt.Color(255, 255, 255));
+        titulo_camara3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        titulo_camara3.setText("Usage:");
+        bateria.add(titulo_camara3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, -1, 32));
+
+        titulo_camara4.setBackground(new java.awt.Color(255, 255, 255));
+        titulo_camara4.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
+        titulo_camara4.setForeground(new java.awt.Color(255, 255, 255));
+        titulo_camara4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        bateria.add(titulo_camara4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, 130, 32));
+
+        camara.add(bateria, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 490, 200, -1));
 
         restrooms.setOpaque(false);
         restrooms.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1198,6 +1230,14 @@ public class main extends javax.swing.JFrame {
         restrooms.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
 
         camara.add(restrooms, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        show_stage.setOpaque(false);
+        show_stage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam1a.jpg"))); // NOI18N
+        show_stage.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        camara.add(show_stage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
 
         kitchen.setOpaque(false);
         kitchen.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
@@ -1226,8 +1266,8 @@ public class main extends javax.swing.JFrame {
         west_hall_corner.setOpaque(false);
         west_hall_corner.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jLabel44.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam2bempty.png"))); // NOI18N
-        west_hall_corner.add(jLabel44, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+        golden_cam.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam2bempty.png"))); // NOI18N
+        west_hall_corner.add(golden_cam, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
 
         camara.add(west_hall_corner, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
 
@@ -1583,7 +1623,7 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam1BMouseClicked
 
     private void cam5MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam5MouseClicked
-        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
         a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(false);
@@ -1600,7 +1640,7 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam5MouseClicked
 
     private void cam1cMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam1cMouseClicked
-        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
         a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(false);
@@ -1617,7 +1657,7 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam1cMouseClicked
 
     private void cam3MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam3MouseClicked
-        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
         a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(false);
@@ -1634,7 +1674,7 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam3MouseClicked
 
     private void cam2aMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam2aMouseClicked
-        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
         a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(false);
@@ -1651,8 +1691,14 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam2aMouseClicked
 
     private void cam2bMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam2bMouseClicked
-        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
         a.start();
+        if (west_hall_corner.isVisible()) {
+            if (noche == 2 || noche == 4 || noche == 5 && golden != 0) {
+                Golden_Freddy gf = new Golden_Freddy(noche, golden_cam, label_oficina);
+                gf.start();
+            }
+        }
         show_stage.setVisible(false);
         restrooms.setVisible(false);
         kitchen.setVisible(false);
@@ -1665,10 +1711,11 @@ public class main extends javax.swing.JFrame {
         backstage.setVisible(false);
         Dining_area.setVisible(false);
         titulo_camara.setText("W. Hall Corner");
+
     }//GEN-LAST:event_cam2bMouseClicked
 
     private void cam4bMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam4bMouseClicked
-        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
         a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(false);
@@ -1685,7 +1732,7 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam4bMouseClicked
 
     private void cam4AMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam4AMouseClicked
-        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
         a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(false);
@@ -1702,7 +1749,7 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam4AMouseClicked
 
     private void cam6MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam6MouseClicked
-        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
         a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(false);
@@ -1719,7 +1766,7 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_cam6MouseClicked
 
     private void cam7MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam7MouseClicked
-        audio a=new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
+        audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
         a.start();
         show_stage.setVisible(false);
         restrooms.setVisible(true);
@@ -1741,28 +1788,55 @@ public class main extends javax.swing.JFrame {
         audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\door.wav");
         if (puerta_i) {
             //abierta
-            puerta = new door(0, fondo_puerta_iquierda, label_puerta_izqui, puerta_i, "C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\puerta izquierda\\cerrar puerta izqui.gif");
+            puerta = new door(fondo_puerta_iquierda, label_puerta_izqui, puerta_i, "C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\puerta izquierda\\cerrar puerta izqui.gif");
             a.start();
             puerta.start();
             puerta_i = false;
+            botones_i();
         } else if (!puerta_i) {
             //cerrada
-            puerta = new door(0, fondo_puerta_iquierda, label_puerta_izqui, puerta_i, "C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\puerta izquierda\\leftdooropen.gif");
+            puerta = new door(fondo_puerta_iquierda, label_puerta_izqui, puerta_i, "C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\puerta izquierda\\leftdooropen.gif");
             a.start();
             puerta.start();
             puerta_i = true;
+            botones_i();
         }
     }//GEN-LAST:event_door_izquierdaMouseClicked
 
     private void light_izquierdaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_light_izquierdaMouseClicked
         //luz izquierda
-        if (luz_derecho == true) {
-
+        audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\light.wav");
+        a.start();
+        if (!luz_izquierda) {
+            luz_izquierda = true;
+            botones_i();
+            if (luz_derecho) {
+                luz_derecho = false;
+            }
+            label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\oficina\\leftlighton.png"));
+        } else {
+            luz_izquierda = false;
+            botones_i();
+            label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\src\\oficina\\office.jpg"));
         }
     }//GEN-LAST:event_light_izquierdaMouseClicked
 
     private void light_derechaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_light_derechaMouseClicked
         //luz derecha
+        audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\light.wav");
+        a.start();
+        if (!luz_derecho) {
+            luz_derecho = true;
+            botones_d();
+            if (luz_izquierda) {
+                luz_izquierda = false;
+            }
+            label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\oficina\\rightlighton.png"));
+        } else {
+            luz_derecho = false;
+            botones_d();
+            label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\src\\oficina\\office.jpg"));
+        }
     }//GEN-LAST:event_light_derechaMouseClicked
 
     private void jLabel65MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel65MouseEntered
@@ -1795,17 +1869,18 @@ public class main extends javax.swing.JFrame {
         audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\door.wav");
         if (puerta_d) {
             //abierta
-            puerta = new door(1, fondo_puerta_derecha, Label_puerta_dere, puerta_d, "C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\Puerta derecha\\cerrar_derecha.gif");
+            puerta = new door(fondo_puerta_derecha, Label_puerta_dere, puerta_d, "C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\Puerta derecha\\cerrar_derecha.gif");
             a.start();
             puerta.start();
             puerta_d = false;
+            botones_d();
         } else if (!puerta_d) {
             //cerrada
-            puerta = new door(1, fondo_puerta_derecha, Label_puerta_dere, puerta_d, "C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\Puerta derecha\\abrir_de.gif");
+            puerta = new door(fondo_puerta_derecha, Label_puerta_dere, puerta_d, "C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\Puerta derecha\\abrir_de.gif");
             a.start();
             puerta.start();
             puerta_d = true;
-
+            botones_d();
         }
     }//GEN-LAST:event_door_derechaMouseClicked
 
@@ -1848,6 +1923,7 @@ public class main extends javax.swing.JFrame {
         audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\freddynose.wav");
         a.start();
     }//GEN-LAST:event_narizMouseClicked
+
     public static boolean iniciar(String usuario, String contra) {
         AdminJugador aj = new AdminJugador("FiveNights.fnaf");
         aj.cargarArchivo();
@@ -1857,6 +1933,50 @@ public class main extends javax.swing.JFrame {
             }
         }
         return false;
+    }
+
+    private void botones_d() {
+        if (!puerta_d && luz_derecho) {
+            fondo_botones_derecho.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones derechos\\rightdoorclosedlightson.png"));
+            if (luz_izquierda && !puerta_i) {
+                fondo_botones_izqui.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones izquierdos\\leftdooractive.png"));
+            } else if (luz_izquierda) {
+                fondo_botones_izqui.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones izquierdos\\leftdoorbuttons.png"));
+            }
+        } else if (puerta_d && !luz_derecho) {
+            fondo_botones_derecho.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones derechos\\boton_puerta_derecha.png"));
+        } else if (!puerta_d) {
+            fondo_botones_derecho.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones derechos\\rightdooractive.png"));
+        } else if (luz_derecho) {
+            fondo_botones_derecho.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones derechos\\rightdooropenlightson.png"));
+            if (luz_izquierda && !puerta_i) {
+                fondo_botones_izqui.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones izquierdos\\leftdooractive.png"));
+            } else if (luz_izquierda) {
+                fondo_botones_izqui.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones izquierdos\\leftdoorbuttons.png"));
+            }
+        }
+    }
+
+    private void botones_i() {
+        if (!puerta_i && luz_izquierda) {
+            fondo_botones_izqui.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones izquierdos\\leftdoorclosedlightson.png"));
+            if (luz_derecho && !puerta_d) {
+                fondo_botones_derecho.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones derechos\\rightdooractive.png"));
+            } else if (luz_derecho) {
+                fondo_botones_derecho.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones derechos\\boton_puerta_derecha.png"));
+            }
+        } else if (puerta_i && !luz_izquierda) {
+            fondo_botones_izqui.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones izquierdos\\leftdoorbuttons.png"));
+        } else if (!puerta_i) {
+            fondo_botones_izqui.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones izquierdos\\leftdooractive.png"));
+        } else if (luz_izquierda) {
+            fondo_botones_izqui.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones izquierdos\\leftdooropenlightson.png"));
+            if (luz_derecho && !puerta_d) {
+                fondo_botones_derecho.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones derechos\\rightdooractive.png"));
+            } else if (luz_derecho) {
+                fondo_botones_derecho.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones derechos\\boton_puerta_derecha.png"));
+            }
+        }
     }
 
     public static boolean nombre_unico(String nombre) {
@@ -1901,25 +2021,36 @@ public class main extends javax.swing.JFrame {
             }
         });
     }
-    boolean puerta_d = true;
-    boolean puerta_i = true;
+    public int golden;
+    /*
+    0 es para desactivado
+     */
+    public int noche;
+    public boolean puerta_d = true;
+    public boolean puerta_i = true;
     /*
     false es cerrado
     true es abierto
      */
-    boolean en_camaras = false;
+    public boolean en_camaras = false;
     /*
     en_camaras es true cuando las camaras estan abiertas
     en_camaras es false cuando las camaras estan cerradas
      */
-    boolean luz_derecho = false;
-    boolean luz_izquierda = false;
+    public boolean luz_derecho = false;
+    public boolean luz_izquierda = false;
+    /*
+    luz_ = false; apagada
+    luz= true; encendida
+    
+     */
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JPanel Dining_area;
     private javax.swing.JLabel Label_puerta_dere;
     private javax.swing.JPanel Nueva_partida;
     private javax.swing.JPanel admin;
     private javax.swing.JPanel backstage;
+    private javax.swing.JPanel bateria;
     private javax.swing.JButton c_back;
     private javax.swing.JTextField c_contrasena;
     private javax.swing.JButton c_listo;
@@ -1946,6 +2077,8 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JPanel elige;
     private javax.swing.JLabel entradaC;
     private javax.swing.JPanel fondo;
+    private javax.swing.JLabel fondo_botones_derecho;
+    private javax.swing.JLabel fondo_botones_izqui;
     private javax.swing.JPanel fondo_crear_perfil;
     private javax.swing.JPanel fondo_iniciar_sesion;
     private javax.swing.JPanel fondo_jugar;
@@ -1958,6 +2091,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JPanel fondo_tiempo1;
     private javax.swing.JPanel gif_camara_entrada;
     private javax.swing.JPanel gif_camara_salida;
+    private javax.swing.JLabel golden_cam;
     private javax.swing.JLabel hora;
     private javax.swing.JLabel hora1;
     private javax.swing.JButton i_back;
@@ -1988,14 +2122,12 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
-    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
-    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
@@ -2003,7 +2135,6 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel44;
     private javax.swing.JLabel jLabel45;
     private javax.swing.JLabel jLabel46;
     private javax.swing.JLabel jLabel47;
@@ -2011,7 +2142,6 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
-    private javax.swing.JLabel jLabel51;
     private javax.swing.JLabel jLabel53;
     private javax.swing.JLabel jLabel54;
     private javax.swing.JLabel jLabel56;
@@ -2036,6 +2166,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
     private javax.swing.JPanel kitchen;
+    private javax.swing.JLabel label_oficina;
     private javax.swing.JLabel label_puerta_izqui;
     private javax.swing.JLabel light_derecha;
     private javax.swing.JLabel light_izquierda;
@@ -2071,6 +2202,10 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel texto_j1;
     private javax.swing.JLabel texto_s1;
     private javax.swing.JLabel titulo_camara;
+    private javax.swing.JLabel titulo_camara1;
+    private javax.swing.JLabel titulo_camara2;
+    private javax.swing.JLabel titulo_camara3;
+    private javax.swing.JLabel titulo_camara4;
     private javax.swing.JPanel west_hall;
     private javax.swing.JPanel west_hall_corner;
     // End of variables declaration//GEN-END:variables

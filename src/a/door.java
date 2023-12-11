@@ -4,10 +4,7 @@
  */
 package a;
 
-import java.io.File;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.Icon;
+
 import javax.swing.ImageIcon;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
@@ -20,16 +17,14 @@ public class door extends Thread {
 
     private JLabel puerta;
     private boolean abierta;
-    private int lado;
     private String gif;
     private JPanel fondo;
 
-    public door(int lado, JPanel fondo, JLabel puerta, boolean abierta, String gif) {
+    public door( JPanel fondo, JLabel puerta, boolean abierta, String gif) {
         this.puerta = puerta;
         this.abierta = abierta;
         this.gif = gif;
         this.fondo = fondo;
-        this.lado = lado;
     }
 
     @Override
