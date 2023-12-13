@@ -1909,6 +1909,7 @@ public class main extends javax.swing.JFrame {
         if (noche == 2 || noche == 4 || noche == 5 && golden != 0) {
             Golden_Freddy gf = new Golden_Freddy(golden, vivo, noche, LabelWestHallCorner, label_oficina, oficina, LabelJumpScare, jumpscare);
             gf.start();
+            activogolden = 1;
         }
         show_stage.setVisible(false);
         restrooms.setVisible(false);
@@ -2030,7 +2031,11 @@ public class main extends javax.swing.JFrame {
                     luz_derecho = false;
                     ba.setLuzD(luz_derecho);
                 }
-                label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\oficina\\leftlighton.png"));
+                if (Bonnieafuera) {
+                    label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\camaras\\bonnie\\8Bonnie.png"));
+                } else {
+                    label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\oficina\\leftlighton.png"));
+                }
             } else {
                 luz_izquierda = false;
                 ba.setLuzIzq(luz_izquierda);
@@ -2052,7 +2057,11 @@ public class main extends javax.swing.JFrame {
                 luz_izquierda = false;
                 ba.setLuzIzq(luz_izquierda);
             }
-            label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\oficina\\rightlighton.png"));
+            if (Chicaafuera) {
+                label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\camaras\\chica\\9Chica.jpg"));
+            } else {
+                label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\oficina\\rightlighton.png"));
+            }
         } else {
             luz_derecho = false;
             ba.setLuzD(luz_derecho);
@@ -2117,7 +2126,7 @@ public class main extends javax.swing.JFrame {
         oficina.setVisible(true);
         ba = new bateria(puerta_d, puerta_i, luz_derecho, luz_izquierda, en_camaras, bateriaCam, porcentajeCam, OficinaPorcentaje, BateriaOficina);
         ba.start();
-        
+
     }//GEN-LAST:event_jLabel1MouseClicked
 
     private void jLabel50MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel50MouseEntered
@@ -2404,15 +2413,18 @@ public class main extends javax.swing.JFrame {
         });
     }
     public boolean vivo = true;
-    public int golden=0;
-    public int Ubifoxy=0;
-    public int AIfoxy=0;
-    public int UbiFreddy=0;
-    public int AIFreddy=0;
-    public int UbiChica=0;
-    public int AIChica=0;
-    public int UbiBonnie=0;
-    public int AIBonnie=0;
+    public int golden = 0;
+    public int activogolden = 0;
+    public int Ubifoxy = 0;
+    public int AIfoxy = 0;
+    public int UbiFreddy = 0;
+    public int AIFreddy = 0;
+    public int UbiChica = 0;
+    public int AIChica = 0;
+    public boolean Chicaafuera = false;
+    public boolean Bonnieafuera = false;
+    public int UbiBonnie = 0;
+    public int AIBonnie = 0;
     /*
     0 es para desactivado
      */
