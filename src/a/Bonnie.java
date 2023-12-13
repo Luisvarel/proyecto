@@ -300,13 +300,14 @@ public class Bonnie extends Thread {
                 bonniepuerta = 8;
                 m.Bonnieafuera = true;
                 m.ba.setLuzIzq(false);
+                m.ba.setLuzD(false);
                 label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\src\\oficina\\office.jpg"));
                 camara.setVisible(false);
                 if (m.en_camaras) {
-                    audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\camaraup.wav");
+                    audio a3 = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\camaraup.wav");
                     gif_cambio_CO g = new gif_cambio_CO(gif_camara_salida, salidaC, PanelOficina);
                     g.start();
-                    a.start();
+                    a3.start();
                     m.en_camaras = false;
                     m.ba.setCamara(m.en_camaras);
                 }
@@ -318,8 +319,8 @@ public class Bonnie extends Thread {
                     m.vivo = false;
                     PanelOficina.setVisible(false);
                     PanelJumpscare.setVisible(true);
-                    audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\scream.wav");
-                    a.start();
+                    audio a4 = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\scream.wav");
+                    a4.start();
                     LabelJumpscare.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\muertes\\bonniedeath.gif"));
                     try {
                         Thread.sleep(5000);
@@ -382,6 +383,8 @@ public class Bonnie extends Thread {
     }
 
     public void movimiento3(int num) {
+        audio a5 = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Steps.wav");
+        a5.start();
         switch (bonniepuerta) {
             case 1 -> {
                 if (m.UbiBonnie == 1 && (m.UbiChica != 1 || m.UbiChica != 2) && m.UbiFreddy != 1) {
@@ -408,8 +411,8 @@ public class Bonnie extends Thread {
                     m.vivo = false;
                     PanelOficina.setVisible(false);
                     PanelJumpscare.setVisible(true);
-                    audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\scream.wav");
-                    a.start();
+                    audio a1 = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\scream.wav");
+                    a1.start();
                     LabelJumpscare.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\muertes\\bonniedeath.gif"));
                     try {
                         Thread.sleep(5000);

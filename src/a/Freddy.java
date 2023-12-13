@@ -268,6 +268,9 @@ public class Freddy extends Thread {
                                 if (m.AIChica > 0) {
                                     audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\freddymove1.wav");
                                     a.start();
+                                    if (m.UbiChica + 1 < 7) {
+                                        m.UbiChica= m.UbiChica + 1;
+                                    }
                                 }
                             }
                             case 2 -> {
@@ -287,7 +290,6 @@ public class Freddy extends Thread {
                                     if (m.UbiBonnie + 1 < 7) {
                                         m.UbiBonnie = m.UbiBonnie + 1;
                                     }
-
                                 }
                             }
                         }
