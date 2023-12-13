@@ -35,7 +35,7 @@ public class Chica extends Thread {
     public void run() {
         switch (noche) {
             case 1 -> {
-
+                
             }
             case 2 -> {
                 /*

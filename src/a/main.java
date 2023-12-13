@@ -19,48 +19,10 @@ public class main extends javax.swing.JFrame {
      */
     public main() {
         initComponents();
+        armar();
+        ArmarCamaras();
         this.pack();
-        golden_cam.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\camaras\\cam2bempty.png"));
-        label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\oficina\\office.jpg"));
-        menu_jugador.setVisible(false);
-        e_puntero_s.setText("");
-        menu.setVisible(false);
-        oficina.setVisible(false);
-        camara.setVisible(false);
-        Dining_area.setVisible(false);
-        backstage.setVisible(false);
-        pirate_cave.setVisible(false);
-        supply_closet.setVisible(false);
-        west_hall.setVisible(false);
-        west_hall_corner.setVisible(false);
-        east_hall.setVisible(false);
-        east_hall_corner.setVisible(false);
-        kitchen.setVisible(false);
-        restrooms.setVisible(false);
-        iniciar.setVisible(false);
-        crear.setVisible(false);
-        admin.setVisible(false);
-        elige.setVisible(false);
-        oficina.setVisible(true);
-        this.setLocation(250, 100);
-        puntero_j1.setText("");
-        puntero_c.setText("");
-        puntero_in.setText("");
-        puntero_s1.setText("");
-        puntero_l1.setText("");
-        puntero_noche_1.setText("");
-        puntero_noche_2.setText("");
-        puntero_noche_3.setText("");
-        puntero_noche_4.setText("");
-        puntero_noche_perso.setText("");
-        gif_camara_entrada.setVisible(false);
-        gif_camara_salida.setVisible(false);
-        if (puerta_d) {
-            fondo_puerta_derecha.setVisible(false);
-        }
-        if (puerta_i) {
-            fondo_puerta_iquierda.setVisible(false);
-        }
+        NochePersonalizada.setVisible(false);
     }
 
     /**
@@ -72,7 +34,56 @@ public class main extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
+        admin = new javax.swing.JPanel();
+        jLabel22 = new javax.swing.JLabel();
+        jLabel26 = new javax.swing.JLabel();
+        jLabel27 = new javax.swing.JLabel();
+        jLabel28 = new javax.swing.JLabel();
+        noche_personalizada = new javax.swing.JPanel();
+        jLabel38 = new javax.swing.JLabel();
+        jLabel36 = new javax.swing.JLabel();
+        puntero_noche_perso = new javax.swing.JLabel();
+        noche_4 = new javax.swing.JPanel();
+        jLabel35 = new javax.swing.JLabel();
+        jLabel33 = new javax.swing.JLabel();
+        puntero_noche_4 = new javax.swing.JLabel();
+        noche_3 = new javax.swing.JPanel();
+        jLabel4 = new javax.swing.JLabel();
+        jLabel31 = new javax.swing.JLabel();
+        puntero_noche_3 = new javax.swing.JLabel();
+        noche_2 = new javax.swing.JPanel();
+        jLabel2 = new javax.swing.JLabel();
+        jLabel29 = new javax.swing.JLabel();
+        puntero_noche_2 = new javax.swing.JLabel();
+        noche_1 = new javax.swing.JPanel();
+        jLabel1 = new javax.swing.JLabel();
+        jLabel24 = new javax.swing.JLabel();
+        puntero_noche_1 = new javax.swing.JLabel();
+        jLabel25 = new javax.swing.JLabel();
+        Elige = new javax.swing.JPanel();
+        jPanel7 = new javax.swing.JPanel();
+        jLabel5 = new javax.swing.JLabel();
+        fondo_s = new javax.swing.JPanel();
+        jLabel19 = new javax.swing.JLabel();
+        e_puntero_s = new javax.swing.JLabel();
+        jLabel16 = new javax.swing.JLabel();
+        FondoCrear = new javax.swing.JPanel();
+        jLabel9 = new javax.swing.JLabel();
+        puntero_c = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        FondoIniciar = new javax.swing.JPanel();
+        jLabel11 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        puntero_in = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
+        jumpscare = new javax.swing.JPanel();
+        LabelJumpScare = new javax.swing.JLabel();
         oficina = new javax.swing.JPanel();
+        bateria1 = new javax.swing.JPanel();
+        OficinaPorcentaje = new javax.swing.JLabel();
+        titulo_camara6 = new javax.swing.JLabel();
+        titulo_camara7 = new javax.swing.JLabel();
+        BateriaOficina = new javax.swing.JLabel();
         fondo_tiempo = new javax.swing.JPanel();
         hora = new javax.swing.JLabel();
         jLabel53 = new javax.swing.JLabel();
@@ -89,22 +100,52 @@ public class main extends javax.swing.JFrame {
         fondo_botones_izqui = new javax.swing.JLabel();
         jLabel50 = new javax.swing.JLabel();
         label_oficina = new javax.swing.JLabel();
-        elige = new javax.swing.JPanel();
-        jPanel7 = new javax.swing.JPanel();
-        jLabel5 = new javax.swing.JLabel();
-        fondo_s = new javax.swing.JPanel();
-        e_puntero_s = new javax.swing.JLabel();
-        jLabel16 = new javax.swing.JLabel();
-        jLabel19 = new javax.swing.JLabel();
-        fondo_crear_perfil = new javax.swing.JPanel();
-        puntero_c = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        jLabel9 = new javax.swing.JLabel();
-        fondo_iniciar_sesion = new javax.swing.JPanel();
-        jLabel6 = new javax.swing.JLabel();
-        puntero_in = new javax.swing.JLabel();
-        jLabel11 = new javax.swing.JLabel();
-        jLabel3 = new javax.swing.JLabel();
+        camara = new javax.swing.JPanel();
+        jLabel49 = new javax.swing.JLabel();
+        bateria = new javax.swing.JPanel();
+        porcentajeCam = new javax.swing.JLabel();
+        titulo_camara2 = new javax.swing.JLabel();
+        titulo_camara3 = new javax.swing.JLabel();
+        bateriaCam = new javax.swing.JLabel();
+        fondo_tiempo1 = new javax.swing.JPanel();
+        hora1 = new javax.swing.JLabel();
+        jLabel54 = new javax.swing.JLabel();
+        fondo = new javax.swing.JPanel();
+        titulo_camara = new javax.swing.JLabel();
+        cam1A = new javax.swing.JLabel();
+        cam1B = new javax.swing.JLabel();
+        cam5 = new javax.swing.JLabel();
+        cam1c = new javax.swing.JLabel();
+        cam3 = new javax.swing.JLabel();
+        cam2a = new javax.swing.JLabel();
+        cam2b = new javax.swing.JLabel();
+        cam4b = new javax.swing.JLabel();
+        cam4A = new javax.swing.JLabel();
+        cam6 = new javax.swing.JLabel();
+        cam7 = new javax.swing.JLabel();
+        jLabel32 = new javax.swing.JLabel();
+        show_stage = new javax.swing.JPanel();
+        LabelShowStage = new javax.swing.JLabel();
+        west_hall_corner = new javax.swing.JPanel();
+        LabelWestHallCorner = new javax.swing.JLabel();
+        restrooms = new javax.swing.JPanel();
+        LabelRestrooms = new javax.swing.JLabel();
+        east_hall_corner = new javax.swing.JPanel();
+        LabelEastHallCorner = new javax.swing.JLabel();
+        east_hall = new javax.swing.JPanel();
+        LabelEastHall = new javax.swing.JLabel();
+        kitchen = new javax.swing.JPanel();
+        LabelKitchen = new javax.swing.JLabel();
+        west_hall = new javax.swing.JPanel();
+        LabelWestHall = new javax.swing.JLabel();
+        supply_closet = new javax.swing.JPanel();
+        LabelSupplyCloset = new javax.swing.JLabel();
+        pirate_cove = new javax.swing.JPanel();
+        LabelPirateCove = new javax.swing.JLabel();
+        backstage = new javax.swing.JPanel();
+        LabelBackStage = new javax.swing.JLabel();
+        Dining_area = new javax.swing.JPanel();
+        LabelDinnigArea = new javax.swing.JLabel();
         crear = new javax.swing.JPanel();
         c_listo = new javax.swing.JButton();
         c_back = new javax.swing.JButton();
@@ -133,13 +174,13 @@ public class main extends javax.swing.JFrame {
         jPanel8 = new javax.swing.JPanel();
         jLabel20 = new javax.swing.JLabel();
         fondo_jugar = new javax.swing.JPanel();
+        posicion_j1 = new javax.swing.JLabel();
         puntero_j1 = new javax.swing.JLabel();
         texto_j1 = new javax.swing.JLabel();
-        posicion_j1 = new javax.swing.JLabel();
         fondo_salir = new javax.swing.JPanel();
+        posicion_s1 = new javax.swing.JLabel();
         texto_s1 = new javax.swing.JLabel();
         puntero_s1 = new javax.swing.JLabel();
-        posicion_s1 = new javax.swing.JLabel();
         fondo_logros = new javax.swing.JPanel();
         posicion_l1 = new javax.swing.JLabel();
         jLabel21 = new javax.swing.JLabel();
@@ -150,100 +191,399 @@ public class main extends javax.swing.JFrame {
         jLabel57 = new javax.swing.JLabel();
         jLabel58 = new javax.swing.JLabel();
         jLabel59 = new javax.swing.JLabel();
+        NochePersonalizada = new javax.swing.JPanel();
+        jLabel69 = new javax.swing.JLabel();
+        jLabel68 = new javax.swing.JLabel();
+        puntero_noche_8 = new javax.swing.JLabel();
         continuar = new javax.swing.JPanel();
+        jLabel65 = new javax.swing.JLabel();
         jLabel64 = new javax.swing.JLabel();
         puntero_noche_6 = new javax.swing.JLabel();
-        jLabel65 = new javax.swing.JLabel();
         Nueva_partida = new javax.swing.JPanel();
+        jLabel67 = new javax.swing.JLabel();
         jLabel66 = new javax.swing.JLabel();
         puntero_noche_7 = new javax.swing.JLabel();
-        jLabel67 = new javax.swing.JLabel();
         jLabel70 = new javax.swing.JLabel();
-        admin = new javax.swing.JPanel();
-        jLabel22 = new javax.swing.JLabel();
-        jLabel26 = new javax.swing.JLabel();
-        jLabel27 = new javax.swing.JLabel();
-        jLabel28 = new javax.swing.JLabel();
-        noche_personalizada = new javax.swing.JPanel();
-        jLabel36 = new javax.swing.JLabel();
-        puntero_noche_perso = new javax.swing.JLabel();
-        jLabel38 = new javax.swing.JLabel();
-        noche_4 = new javax.swing.JPanel();
-        jLabel33 = new javax.swing.JLabel();
-        puntero_noche_4 = new javax.swing.JLabel();
-        jLabel35 = new javax.swing.JLabel();
-        noche_3 = new javax.swing.JPanel();
-        jLabel31 = new javax.swing.JLabel();
-        puntero_noche_3 = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
-        noche_2 = new javax.swing.JPanel();
-        jLabel29 = new javax.swing.JLabel();
-        puntero_noche_2 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        noche_1 = new javax.swing.JPanel();
-        jLabel24 = new javax.swing.JLabel();
-        puntero_noche_1 = new javax.swing.JLabel();
-        jLabel1 = new javax.swing.JLabel();
-        jLabel25 = new javax.swing.JLabel();
-        camara = new javax.swing.JPanel();
-        jLabel49 = new javax.swing.JLabel();
-        fondo_tiempo1 = new javax.swing.JPanel();
-        hora1 = new javax.swing.JLabel();
-        jLabel54 = new javax.swing.JLabel();
-        fondo = new javax.swing.JPanel();
-        titulo_camara = new javax.swing.JLabel();
-        jLabel32 = new javax.swing.JLabel();
-        cam1A = new javax.swing.JLabel();
-        cam1B = new javax.swing.JLabel();
-        cam5 = new javax.swing.JLabel();
-        cam1c = new javax.swing.JLabel();
-        cam3 = new javax.swing.JLabel();
-        cam2a = new javax.swing.JLabel();
-        cam2b = new javax.swing.JLabel();
-        cam4b = new javax.swing.JLabel();
-        cam4A = new javax.swing.JLabel();
-        cam6 = new javax.swing.JLabel();
-        cam7 = new javax.swing.JLabel();
-        bateria = new javax.swing.JPanel();
-        titulo_camara1 = new javax.swing.JLabel();
-        titulo_camara2 = new javax.swing.JLabel();
-        titulo_camara3 = new javax.swing.JLabel();
-        titulo_camara4 = new javax.swing.JLabel();
-        restrooms = new javax.swing.JPanel();
-        jLabel47 = new javax.swing.JLabel();
-        show_stage = new javax.swing.JPanel();
-        jLabel34 = new javax.swing.JLabel();
-        kitchen = new javax.swing.JPanel();
-        jLabel48 = new javax.swing.JLabel();
-        east_hall_corner = new javax.swing.JPanel();
-        jLabel46 = new javax.swing.JLabel();
-        east_hall = new javax.swing.JPanel();
-        jLabel45 = new javax.swing.JLabel();
-        west_hall_corner = new javax.swing.JPanel();
-        golden_cam = new javax.swing.JLabel();
-        west_hall = new javax.swing.JPanel();
-        jLabel43 = new javax.swing.JLabel();
-        supply_closet = new javax.swing.JPanel();
-        jLabel42 = new javax.swing.JLabel();
-        pirate_cave = new javax.swing.JPanel();
-        jLabel41 = new javax.swing.JLabel();
-        backstage = new javax.swing.JPanel();
-        jLabel40 = new javax.swing.JLabel();
-        Dining_area = new javax.swing.JPanel();
-        jLabel39 = new javax.swing.JLabel();
         gif_camara_salida = new javax.swing.JPanel();
         salidaC = new javax.swing.JLabel();
         gif_camara_entrada = new javax.swing.JPanel();
         entradaC = new javax.swing.JLabel();
+        Nightmare = new javax.swing.JPanel();
+        jPanel9 = new javax.swing.JPanel();
+        jLabel30 = new javax.swing.JLabel();
+        fondo_salir_elegir = new javax.swing.JPanel();
+        e_puntero_s1 = new javax.swing.JLabel();
+        jLabel34 = new javax.swing.JLabel();
+        jLabel37 = new javax.swing.JLabel();
+        fondo_crear_perfil1 = new javax.swing.JPanel();
+        puntero_c1 = new javax.swing.JLabel();
+        jLabel39 = new javax.swing.JLabel();
+        jLabel40 = new javax.swing.JLabel();
+        fondo_iniciar_sesion1 = new javax.swing.JPanel();
+        jLabel41 = new javax.swing.JLabel();
+        puntero_in1 = new javax.swing.JLabel();
+        jLabel42 = new javax.swing.JLabel();
+        jLabel43 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setUndecorated(true);
         setResizable(false);
 
+        admin.setBackground(new java.awt.Color(0, 0, 0));
+        admin.setMinimumSize(new java.awt.Dimension(1003, 584));
+        admin.setPreferredSize(new java.awt.Dimension(1003, 584));
+        admin.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel22.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel22.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
+        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel22.setText("Nights  ");
+        admin.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 200, 40));
+
+        jLabel26.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel26.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
+        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel26.setText("At ");
+        admin.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(-5, 120, 110, 30));
+
+        jLabel27.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel27.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
+        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel27.setText("Freddy’s ");
+        admin.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, 158, 240, 40));
+
+        jLabel28.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel28.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
+        jLabel28.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel28.setText("Five ");
+        admin.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, 28, 140, 40));
+
+        noche_personalizada.setBackground(new java.awt.Color(0, 0, 0));
+        noche_personalizada.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel38.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel38MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel38MouseExited(evt);
+            }
+        });
+        noche_personalizada.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 350, 40));
+
+        jLabel36.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel36.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        jLabel36.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel36.setText("Noche Personalizada");
+        noche_personalizada.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 300, 40));
+
+        puntero_noche_perso.setBackground(new java.awt.Color(255, 255, 255));
+        puntero_noche_perso.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        puntero_noche_perso.setForeground(new java.awt.Color(255, 255, 255));
+        puntero_noche_perso.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        puntero_noche_perso.setText(">>");
+        noche_personalizada.add(puntero_noche_perso, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 40));
+
+        admin.add(noche_personalizada, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 340, 40));
+
+        noche_4.setBackground(new java.awt.Color(0, 0, 0));
+        noche_4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel35.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel35MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel35MouseExited(evt);
+            }
+        });
+        noche_4.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 40));
+
+        jLabel33.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel33.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        jLabel33.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel33.setText("Noche 4");
+        noche_4.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 130, 40));
+
+        puntero_noche_4.setBackground(new java.awt.Color(255, 255, 255));
+        puntero_noche_4.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        puntero_noche_4.setForeground(new java.awt.Color(255, 255, 255));
+        puntero_noche_4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        puntero_noche_4.setText(">>");
+        noche_4.add(puntero_noche_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 40));
+
+        admin.add(noche_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 220, 40));
+
+        noche_3.setBackground(new java.awt.Color(0, 0, 0));
+        noche_3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel4MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel4MouseExited(evt);
+            }
+        });
+        noche_3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 40));
+
+        jLabel31.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel31.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        jLabel31.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel31.setText("Noche 3");
+        noche_3.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 130, 40));
+
+        puntero_noche_3.setBackground(new java.awt.Color(255, 255, 255));
+        puntero_noche_3.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        puntero_noche_3.setForeground(new java.awt.Color(255, 255, 255));
+        puntero_noche_3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        puntero_noche_3.setText(">>");
+        noche_3.add(puntero_noche_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 40));
+
+        admin.add(noche_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 220, 40));
+
+        noche_2.setBackground(new java.awt.Color(0, 0, 0));
+        noche_2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel2MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel2MouseExited(evt);
+            }
+        });
+        noche_2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 40));
+
+        jLabel29.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel29.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel29.setText("Noche 2");
+        noche_2.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 130, 40));
+
+        puntero_noche_2.setBackground(new java.awt.Color(255, 255, 255));
+        puntero_noche_2.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        puntero_noche_2.setForeground(new java.awt.Color(255, 255, 255));
+        puntero_noche_2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        puntero_noche_2.setText(">>");
+        noche_2.add(puntero_noche_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 40));
+
+        admin.add(noche_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 220, 40));
+
+        noche_1.setBackground(new java.awt.Color(0, 0, 0));
+        noche_1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel1MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel1MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel1MouseExited(evt);
+            }
+        });
+        noche_1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 40));
+
+        jLabel24.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel24.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel24.setText("Noche 1");
+        jLabel24.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel24MouseClicked(evt);
+            }
+        });
+        noche_1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 130, 40));
+
+        puntero_noche_1.setBackground(new java.awt.Color(255, 255, 255));
+        puntero_noche_1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        puntero_noche_1.setForeground(new java.awt.Color(255, 255, 255));
+        puntero_noche_1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        puntero_noche_1.setText(">>");
+        noche_1.add(puntero_noche_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 40));
+
+        admin.add(noche_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 220, 40));
+
+        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo_titulo.gif"))); // NOI18N
+        admin.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        Elige.setBackground(new java.awt.Color(0, 0, 0));
+        Elige.setMinimumSize(new java.awt.Dimension(1003, 584));
+        Elige.setPreferredSize(new java.awt.Dimension(1003, 584));
+        Elige.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel7.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel5.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel5.setText("Five Nights at Freddy’s ");
+        jPanel7.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 13, -1, -1));
+
+        Elige.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 90, 360, 60));
+
+        fondo_s.setBackground(new java.awt.Color(0, 0, 0));
+        fondo_s.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel19.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel19MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel19MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel19MouseExited(evt);
+            }
+        });
+        fondo_s.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 170, 70));
+
+        e_puntero_s.setBackground(new java.awt.Color(255, 255, 255));
+        e_puntero_s.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        e_puntero_s.setForeground(new java.awt.Color(255, 255, 255));
+        e_puntero_s.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        e_puntero_s.setText(">>");
+        fondo_s.add(e_puntero_s, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 60, 70));
+
+        jLabel16.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel16.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel16.setText("Salir");
+        jLabel16.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel16MouseClicked(evt);
+            }
+        });
+        fondo_s.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 170, -1));
+
+        Elige.add(fondo_s, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 380, 170, 70));
+
+        FondoCrear.setBackground(new java.awt.Color(0, 0, 0));
+        FondoCrear.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel9MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel9MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel9MouseExited(evt);
+            }
+        });
+        FondoCrear.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 70));
+
+        puntero_c.setBackground(new java.awt.Color(255, 255, 255));
+        puntero_c.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        puntero_c.setForeground(new java.awt.Color(255, 255, 255));
+        puntero_c.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        puntero_c.setText(">>");
+        FondoCrear.add(puntero_c, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 20, 90, -1));
+
+        jLabel8.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel8.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel8.setText("Crear nueva cuenta");
+        FondoCrear.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 20, 350, -1));
+
+        Elige.add(FondoCrear, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 330, 70));
+
+        FondoIniciar.setBackground(new java.awt.Color(0, 0, 0));
+        FondoIniciar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel11MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel11MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel11MouseExited(evt);
+            }
+        });
+        FondoIniciar.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 260, 70));
+
+        jLabel6.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel6.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel6.setText("Inicia sesión ");
+        FondoIniciar.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(30, 20, 230, -1));
+
+        puntero_in.setBackground(new java.awt.Color(255, 255, 255));
+        puntero_in.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        puntero_in.setForeground(new java.awt.Color(255, 255, 255));
+        puntero_in.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        puntero_in.setText(">>");
+        FondoIniciar.add(puntero_in, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 20, 90, -1));
+
+        Elige.add(FondoIniciar, new org.netbeans.lib.awtextra.AbsoluteConstraints(530, 260, 260, 70));
+
+        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/prueba.gif"))); // NOI18N
+        jLabel3.setMaximumSize(new java.awt.Dimension(860, 433));
+        jLabel3.setMinimumSize(new java.awt.Dimension(860, 433));
+        jLabel3.setPreferredSize(new java.awt.Dimension(860, 433));
+        Elige.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 880, 480));
+
+        jumpscare.setBackground(new java.awt.Color(0, 0, 0));
+        jumpscare.setMinimumSize(new java.awt.Dimension(1003, 584));
+        jumpscare.setPreferredSize(new java.awt.Dimension(1003, 584));
+        jumpscare.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        jumpscare.add(LabelJumpScare, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
         oficina.setBackground(new java.awt.Color(0, 0, 0));
         oficina.setMinimumSize(new java.awt.Dimension(1003, 584));
         oficina.setPreferredSize(new java.awt.Dimension(1003, 584));
         oficina.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        bateria1.setOpaque(false);
+        bateria1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        OficinaPorcentaje.setBackground(new java.awt.Color(255, 255, 255));
+        OficinaPorcentaje.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
+        OficinaPorcentaje.setForeground(new java.awt.Color(255, 255, 255));
+        OficinaPorcentaje.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        OficinaPorcentaje.setText("100.00");
+        bateria1.add(OficinaPorcentaje, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 100, 40));
+
+        titulo_camara6.setBackground(new java.awt.Color(255, 255, 255));
+        titulo_camara6.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
+        titulo_camara6.setForeground(new java.awt.Color(255, 255, 255));
+        titulo_camara6.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        titulo_camara6.setText("Power left:");
+        bateria1.add(titulo_camara6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 24, 130, 32));
+
+        titulo_camara7.setBackground(new java.awt.Color(255, 255, 255));
+        titulo_camara7.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
+        titulo_camara7.setForeground(new java.awt.Color(255, 255, 255));
+        titulo_camara7.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        titulo_camara7.setText("Usage:");
+        bateria1.add(titulo_camara7, new org.netbeans.lib.awtextra.AbsoluteConstraints(3, 60, 70, 32));
+
+        BateriaOficina.setBackground(new java.awt.Color(255, 255, 255));
+        BateriaOficina.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
+        BateriaOficina.setForeground(new java.awt.Color(255, 255, 255));
+        BateriaOficina.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        bateria1.add(BateriaOficina, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, 130, 32));
+
+        oficina.add(bateria1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 490, 200, -1));
 
         fondo_tiempo.setOpaque(false);
 
@@ -370,124 +710,282 @@ public class main extends javax.swing.JFrame {
         label_oficina.setIcon(new javax.swing.ImageIcon(getClass().getResource("/oficina/office.jpg"))); // NOI18N
         oficina.add(label_oficina, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
 
-        elige.setBackground(new java.awt.Color(0, 0, 0));
-        elige.setMinimumSize(new java.awt.Dimension(1003, 584));
-        elige.setPreferredSize(new java.awt.Dimension(1003, 584));
-        elige.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        camara.setBackground(new java.awt.Color(0, 0, 0));
+        camara.setMinimumSize(new java.awt.Dimension(1003, 584));
+        camara.setPreferredSize(new java.awt.Dimension(1003, 584));
+        camara.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        jPanel7.setBackground(new java.awt.Color(0, 0, 0));
-        jPanel7.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel5.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel5.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel5.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel5.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel5.setText("Five Nights at Freddy’s ");
-        jPanel7.add(jLabel5, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 13, -1, -1));
-
-        elige.add(jPanel7, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 90, 360, 60));
-
-        fondo_s.setBackground(new java.awt.Color(0, 0, 0));
-        fondo_s.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        e_puntero_s.setBackground(new java.awt.Color(255, 255, 255));
-        e_puntero_s.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        e_puntero_s.setForeground(new java.awt.Color(255, 255, 255));
-        e_puntero_s.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        e_puntero_s.setText(">>");
-        fondo_s.add(e_puntero_s, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 13, 50, 40));
-
-        jLabel16.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel16.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel16.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel16.setText("Salir");
-        fondo_s.add(jLabel16, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 3, 160, 60));
-
-        jLabel19.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel19MouseClicked(evt);
-            }
+        jLabel49.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel49.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/closecam.png"))); // NOI18N
+        jLabel49.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel19MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel19MouseExited(evt);
+                jLabel49MouseEntered(evt);
             }
         });
-        fondo_s.add(jLabel19, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 170, 60));
+        camara.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 510, -1, -1));
 
-        elige.add(fondo_s, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 380, 170, 60));
+        bateria.setOpaque(false);
+        bateria.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        fondo_crear_perfil.setBackground(new java.awt.Color(0, 0, 0));
-        fondo_crear_perfil.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+        porcentajeCam.setBackground(new java.awt.Color(255, 255, 255));
+        porcentajeCam.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
+        porcentajeCam.setForeground(new java.awt.Color(255, 255, 255));
+        porcentajeCam.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        porcentajeCam.setText("100.00");
+        bateria.add(porcentajeCam, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 80, 40));
 
-        puntero_c.setBackground(new java.awt.Color(255, 255, 255));
-        puntero_c.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        puntero_c.setForeground(new java.awt.Color(255, 255, 255));
-        puntero_c.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        puntero_c.setText(">>");
-        fondo_crear_perfil.add(puntero_c, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 20, 90, -1));
+        titulo_camara2.setBackground(new java.awt.Color(255, 255, 255));
+        titulo_camara2.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
+        titulo_camara2.setForeground(new java.awt.Color(255, 255, 255));
+        titulo_camara2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        titulo_camara2.setText("Power left:");
+        bateria.add(titulo_camara2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 24, 130, 32));
 
-        jLabel8.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel8.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel8.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel8.setText("Crear nueva cuenta");
-        fondo_crear_perfil.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, -1));
+        titulo_camara3.setBackground(new java.awt.Color(255, 255, 255));
+        titulo_camara3.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
+        titulo_camara3.setForeground(new java.awt.Color(255, 255, 255));
+        titulo_camara3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        titulo_camara3.setText("Usage:");
+        bateria.add(titulo_camara3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, -1, 32));
 
-        jLabel9.addMouseListener(new java.awt.event.MouseAdapter() {
+        bateriaCam.setBackground(new java.awt.Color(0, 0, 0));
+        bateriaCam.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
+        bateriaCam.setForeground(new java.awt.Color(255, 255, 255));
+        bateriaCam.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        bateria.add(bateriaCam, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, 130, 32));
+
+        camara.add(bateria, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 490, 200, -1));
+
+        fondo_tiempo1.setBackground(new java.awt.Color(0, 0, 0));
+
+        hora1.setBackground(new java.awt.Color(255, 255, 255));
+        hora1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        hora1.setForeground(new java.awt.Color(255, 255, 255));
+        hora1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        hora1.setText("12");
+
+        jLabel54.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel54.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        jLabel54.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel54.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel54.setText("AM");
+
+        javax.swing.GroupLayout fondo_tiempo1Layout = new javax.swing.GroupLayout(fondo_tiempo1);
+        fondo_tiempo1.setLayout(fondo_tiempo1Layout);
+        fondo_tiempo1Layout.setHorizontalGroup(
+            fondo_tiempo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(fondo_tiempo1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addComponent(hora1)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(jLabel54)
+                .addContainerGap(34, Short.MAX_VALUE))
+        );
+        fondo_tiempo1Layout.setVerticalGroup(
+            fondo_tiempo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+            .addGroup(fondo_tiempo1Layout.createSequentialGroup()
+                .addContainerGap()
+                .addGroup(fondo_tiempo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(hora1)
+                    .addComponent(jLabel54))
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+        );
+
+        camara.add(fondo_tiempo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 0, -1, 50));
+
+        fondo.setOpaque(false);
+        fondo.setLayout(null);
+
+        titulo_camara.setBackground(new java.awt.Color(255, 255, 255));
+        titulo_camara.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        titulo_camara.setForeground(new java.awt.Color(255, 255, 255));
+        titulo_camara.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
+        titulo_camara.setText("Show Stage");
+        fondo.add(titulo_camara);
+        titulo_camara.setBounds(30, 90, 300, 50);
+
+        cam1A.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel9MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel9MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel9MouseExited(evt);
+                cam1AMouseClicked(evt);
             }
         });
-        fondo_crear_perfil.add(jLabel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 330, 70));
+        fondo.add(cam1A);
+        cam1A.setBounds(160, 140, 58, 32);
 
-        elige.add(fondo_crear_perfil, new org.netbeans.lib.awtextra.AbsoluteConstraints(150, 260, 330, 70));
-
-        fondo_iniciar_sesion.setBackground(new java.awt.Color(0, 0, 0));
-        fondo_iniciar_sesion.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel6.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel6.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel6.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel6.setText("Iniciar sesión");
-        fondo_iniciar_sesion.add(jLabel6, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, -1));
-
-        puntero_in.setBackground(new java.awt.Color(255, 255, 255));
-        puntero_in.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        puntero_in.setForeground(new java.awt.Color(255, 255, 255));
-        puntero_in.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        puntero_in.setText(">>");
-        fondo_iniciar_sesion.add(puntero_in, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 20, 90, -1));
-
-        jLabel11.addMouseListener(new java.awt.event.MouseAdapter() {
+        cam1B.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel11MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel11MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel11MouseExited(evt);
+                cam1BMouseClicked(evt);
             }
         });
-        fondo_iniciar_sesion.add(jLabel11, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 270, 70));
+        fondo.add(cam1B);
+        cam1B.setBounds(140, 198, 56, 30);
 
-        elige.add(fondo_iniciar_sesion, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 260, 270, 70));
+        cam5.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cam5MouseClicked(evt);
+            }
+        });
+        fondo.add(cam5);
+        cam5.setBounds(35, 225, 50, 30);
 
-        jLabel3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/prueba.gif"))); // NOI18N
-        jLabel3.setMaximumSize(new java.awt.Dimension(860, 433));
-        jLabel3.setMinimumSize(new java.awt.Dimension(860, 433));
-        jLabel3.setPreferredSize(new java.awt.Dimension(860, 433));
-        elige.add(jLabel3, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 880, 480));
+        cam1c.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cam1cMouseClicked(evt);
+            }
+        });
+        fondo.add(cam1c);
+        cam1c.setBounds(110, 270, 50, 40);
+
+        cam3.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cam3MouseClicked(evt);
+            }
+        });
+        fondo.add(cam3);
+        cam3.setBounds(73, 371, 58, 40);
+
+        cam2a.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cam2aMouseClicked(evt);
+            }
+        });
+        fondo.add(cam2a);
+        cam2a.setBounds(156, 389, 57, 33);
+
+        cam2b.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cam2bMouseClicked(evt);
+            }
+        });
+        fondo.add(cam2b);
+        cam2b.setBounds(154, 428, 59, 34);
+
+        cam4b.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cam4bMouseClicked(evt);
+            }
+        });
+        fondo.add(cam4b);
+        cam4b.setBounds(261, 431, 57, 34);
+
+        cam4A.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cam4AMouseClicked(evt);
+            }
+        });
+        fondo.add(cam4A);
+        cam4A.setBounds(262, 390, 59, 34);
+
+        cam6.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cam6MouseClicked(evt);
+            }
+        });
+        fondo.add(cam6);
+        cam6.setBounds(362, 352, 60, 40);
+
+        cam7.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                cam7MouseClicked(evt);
+            }
+        });
+        fondo.add(cam7);
+        cam7.setBounds(370, 225, 51, 34);
+
+        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/camlayout2.png"))); // NOI18N
+        fondo.add(jLabel32);
+        jLabel32.setBounds(33, 130, 390, 360);
+
+        camara.add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 80, 420, 500));
+
+        show_stage.setOpaque(false);
+        show_stage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelShowStage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam1a.jpg"))); // NOI18N
+        show_stage.add(LabelShowStage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        camara.add(show_stage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        west_hall_corner.setOpaque(false);
+        west_hall_corner.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelWestHallCorner.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam2bempty.png"))); // NOI18N
+        west_hall_corner.add(LabelWestHallCorner, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        camara.add(west_hall_corner, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        restrooms.setOpaque(false);
+        restrooms.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelRestrooms.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam7empty.png"))); // NOI18N
+        restrooms.add(LabelRestrooms, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        camara.add(restrooms, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        east_hall_corner.setOpaque(false);
+        east_hall_corner.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelEastHallCorner.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam4Bempty.png"))); // NOI18N
+        east_hall_corner.add(LabelEastHallCorner, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        camara.add(east_hall_corner, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        east_hall.setOpaque(false);
+        east_hall.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelEastHall.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam4Aempty.png"))); // NOI18N
+        east_hall.add(LabelEastHall, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        camara.add(east_hall, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        kitchen.setOpaque(false);
+        kitchen.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelKitchen.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam6.png"))); // NOI18N
+        kitchen.add(LabelKitchen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        camara.add(kitchen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        west_hall.setOpaque(false);
+        west_hall.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelWestHall.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam2aempty.png"))); // NOI18N
+        west_hall.add(LabelWestHall, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        camara.add(west_hall, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        supply_closet.setOpaque(false);
+        supply_closet.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelSupplyCloset.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam3empty.png"))); // NOI18N
+        supply_closet.add(LabelSupplyCloset, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        camara.add(supply_closet, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        pirate_cove.setOpaque(false);
+        pirate_cove.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelPirateCove.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam1cempty.png"))); // NOI18N
+        pirate_cove.add(LabelPirateCove, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        camara.add(pirate_cove, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        backstage.setOpaque(false);
+        backstage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelBackStage.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam5empty.png"))); // NOI18N
+        backstage.add(LabelBackStage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        camara.add(backstage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        Dining_area.setOpaque(false);
+        Dining_area.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        LabelDinnigArea.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam1Bempty.png"))); // NOI18N
+        Dining_area.add(LabelDinnigArea, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
+
+        camara.add(Dining_area, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
 
         crear.setBackground(new java.awt.Color(0, 0, 0));
         crear.setMinimumSize(new java.awt.Dimension(1003, 584));
@@ -662,18 +1160,6 @@ public class main extends javax.swing.JFrame {
         fondo_jugar.setBackground(new java.awt.Color(0, 0, 0));
         fondo_jugar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
 
-        puntero_j1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        puntero_j1.setForeground(new java.awt.Color(255, 255, 255));
-        puntero_j1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        puntero_j1.setText(">>");
-        fondo_jugar.add(puntero_j1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 60));
-
-        texto_j1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        texto_j1.setForeground(new java.awt.Color(255, 255, 255));
-        texto_j1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        texto_j1.setText("Jugar");
-        fondo_jugar.add(texto_j1, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 6, 100, 50));
-
         posicion_j1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
                 posicion_j1MouseClicked(evt);
@@ -687,22 +1173,22 @@ public class main extends javax.swing.JFrame {
         });
         fondo_jugar.add(posicion_j1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, 60));
 
+        puntero_j1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        puntero_j1.setForeground(new java.awt.Color(255, 255, 255));
+        puntero_j1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        puntero_j1.setText(">>");
+        fondo_jugar.add(puntero_j1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 110, 60));
+
+        texto_j1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        texto_j1.setForeground(new java.awt.Color(255, 255, 255));
+        texto_j1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        texto_j1.setText("Jugar");
+        fondo_jugar.add(texto_j1, new org.netbeans.lib.awtextra.AbsoluteConstraints(57, 6, 100, 50));
+
         menu.add(fondo_jugar, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 200, 210, 60));
 
         fondo_salir.setBackground(new java.awt.Color(0, 0, 0));
         fondo_salir.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        texto_s1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        texto_s1.setForeground(new java.awt.Color(255, 255, 255));
-        texto_s1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        texto_s1.setText("Salir");
-        fondo_salir.add(texto_s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 90, 60));
-
-        puntero_s1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        puntero_s1.setForeground(new java.awt.Color(255, 255, 255));
-        puntero_s1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        puntero_s1.setText(">>");
-        fondo_salir.add(puntero_s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 60));
 
         posicion_s1.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -716,6 +1202,18 @@ public class main extends javax.swing.JFrame {
             }
         });
         fondo_salir.add(posicion_s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 210, 60));
+
+        texto_s1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        texto_s1.setForeground(new java.awt.Color(255, 255, 255));
+        texto_s1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        texto_s1.setText("Salir");
+        fondo_salir.add(texto_s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 0, 90, 60));
+
+        puntero_s1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        puntero_s1.setForeground(new java.awt.Color(255, 255, 255));
+        puntero_s1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        puntero_s1.setText(">>");
+        fondo_salir.add(puntero_s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 100, 60));
 
         menu.add(fondo_salir, new org.netbeans.lib.awtextra.AbsoluteConstraints(390, 370, 210, 60));
 
@@ -785,8 +1283,47 @@ public class main extends javax.swing.JFrame {
         jLabel59.setText("Five ");
         menu_jugador.add(jLabel59, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 80, 260, 40));
 
+        NochePersonalizada.setBackground(new java.awt.Color(0, 0, 0));
+        NochePersonalizada.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel69.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel69MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel69MouseExited(evt);
+            }
+        });
+        NochePersonalizada.add(jLabel69, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, -10, 350, 60));
+
+        jLabel68.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel68.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        jLabel68.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel68.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel68.setText("Noche Personalizada");
+        NochePersonalizada.add(jLabel68, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 290, 40));
+
+        puntero_noche_8.setBackground(new java.awt.Color(255, 255, 255));
+        puntero_noche_8.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        puntero_noche_8.setForeground(new java.awt.Color(255, 255, 255));
+        puntero_noche_8.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        puntero_noche_8.setText(">>");
+        NochePersonalizada.add(puntero_noche_8, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 80, 40));
+
+        menu_jugador.add(NochePersonalizada, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 430, -1, 50));
+
         continuar.setBackground(new java.awt.Color(0, 0, 0));
         continuar.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel65.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel65MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel65MouseExited(evt);
+            }
+        });
+        continuar.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 260, 40));
 
         jLabel64.setBackground(new java.awt.Color(255, 255, 255));
         jLabel64.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
@@ -802,20 +1339,20 @@ public class main extends javax.swing.JFrame {
         puntero_noche_6.setText(">>");
         continuar.add(puntero_noche_6, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 40));
 
-        jLabel65.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel65MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel65MouseExited(evt);
-            }
-        });
-        continuar.add(jLabel65, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 260, 40));
-
         menu_jugador.add(continuar, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 370, 210, 40));
 
         Nueva_partida.setBackground(new java.awt.Color(0, 0, 0));
         Nueva_partida.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel67.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel67MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel67MouseExited(evt);
+            }
+        });
+        Nueva_partida.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 300, 40));
 
         jLabel66.setBackground(new java.awt.Color(255, 255, 255));
         jLabel66.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
@@ -831,485 +1368,10 @@ public class main extends javax.swing.JFrame {
         puntero_noche_7.setText(">>");
         Nueva_partida.add(puntero_noche_7, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 80, 40));
 
-        jLabel67.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel67MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel67MouseExited(evt);
-            }
-        });
-        Nueva_partida.add(jLabel67, new org.netbeans.lib.awtextra.AbsoluteConstraints(-10, 0, 300, 40));
-
         menu_jugador.add(Nueva_partida, new org.netbeans.lib.awtextra.AbsoluteConstraints(90, 300, 270, 40));
 
         jLabel70.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo_titulo.gif"))); // NOI18N
         menu_jugador.add(jLabel70, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        admin.setBackground(new java.awt.Color(0, 0, 0));
-        admin.setMinimumSize(new java.awt.Dimension(1003, 584));
-        admin.setPreferredSize(new java.awt.Dimension(1003, 584));
-        admin.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel22.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel22.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
-        jLabel22.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel22.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel22.setText("Nights  ");
-        admin.add(jLabel22, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 70, 200, 40));
-
-        jLabel26.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel26.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
-        jLabel26.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel26.setText("At ");
-        admin.add(jLabel26, new org.netbeans.lib.awtextra.AbsoluteConstraints(-5, 120, 110, 30));
-
-        jLabel27.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel27.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
-        jLabel27.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel27.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel27.setText("Freddy’s ");
-        admin.add(jLabel27, new org.netbeans.lib.awtextra.AbsoluteConstraints(-6, 158, 240, 40));
-
-        jLabel28.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel28.setFont(new java.awt.Font("Monospaced", 1, 36)); // NOI18N
-        jLabel28.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel28.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel28.setText("Five ");
-        admin.add(jLabel28, new org.netbeans.lib.awtextra.AbsoluteConstraints(-2, 28, 140, 40));
-
-        noche_personalizada.setBackground(new java.awt.Color(0, 0, 0));
-        noche_personalizada.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel36.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel36.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel36.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel36.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel36.setText("Noche Personalizada");
-        noche_personalizada.add(jLabel36, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 300, 40));
-
-        puntero_noche_perso.setBackground(new java.awt.Color(255, 255, 255));
-        puntero_noche_perso.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        puntero_noche_perso.setForeground(new java.awt.Color(255, 255, 255));
-        puntero_noche_perso.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        puntero_noche_perso.setText(">>");
-        noche_personalizada.add(puntero_noche_perso, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 40));
-
-        jLabel38.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel38MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel38MouseExited(evt);
-            }
-        });
-        noche_personalizada.add(jLabel38, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 350, 40));
-
-        admin.add(noche_personalizada, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 460, 340, 40));
-
-        noche_4.setBackground(new java.awt.Color(0, 0, 0));
-        noche_4.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel33.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel33.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel33.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel33.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel33.setText("Noche 4");
-        noche_4.add(jLabel33, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 130, 40));
-
-        puntero_noche_4.setBackground(new java.awt.Color(255, 255, 255));
-        puntero_noche_4.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        puntero_noche_4.setForeground(new java.awt.Color(255, 255, 255));
-        puntero_noche_4.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        puntero_noche_4.setText(">>");
-        noche_4.add(puntero_noche_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 40));
-
-        jLabel35.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel35MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel35MouseExited(evt);
-            }
-        });
-        noche_4.add(jLabel35, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 40));
-
-        admin.add(noche_4, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 400, 220, 40));
-
-        noche_3.setBackground(new java.awt.Color(0, 0, 0));
-        noche_3.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel31.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel31.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel31.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel31.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel31.setText("Noche 3");
-        noche_3.add(jLabel31, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 130, 40));
-
-        puntero_noche_3.setBackground(new java.awt.Color(255, 255, 255));
-        puntero_noche_3.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        puntero_noche_3.setForeground(new java.awt.Color(255, 255, 255));
-        puntero_noche_3.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        puntero_noche_3.setText(">>");
-        noche_3.add(puntero_noche_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 40));
-
-        jLabel4.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel4MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel4MouseExited(evt);
-            }
-        });
-        noche_3.add(jLabel4, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 40));
-
-        admin.add(noche_3, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 340, 220, 40));
-
-        noche_2.setBackground(new java.awt.Color(0, 0, 0));
-        noche_2.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel29.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel29.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel29.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel29.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel29.setText("Noche 2");
-        noche_2.add(jLabel29, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 130, 40));
-
-        puntero_noche_2.setBackground(new java.awt.Color(255, 255, 255));
-        puntero_noche_2.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        puntero_noche_2.setForeground(new java.awt.Color(255, 255, 255));
-        puntero_noche_2.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        puntero_noche_2.setText(">>");
-        noche_2.add(puntero_noche_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 40));
-
-        jLabel2.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel2MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel2MouseExited(evt);
-            }
-        });
-        noche_2.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 40));
-
-        admin.add(noche_2, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 280, 220, 40));
-
-        noche_1.setBackground(new java.awt.Color(0, 0, 0));
-        noche_1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel24.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel24.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel24.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel24.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel24.setText("Noche 1");
-        jLabel24.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel24MouseClicked(evt);
-            }
-        });
-        noche_1.add(jLabel24, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 0, 130, 40));
-
-        puntero_noche_1.setBackground(new java.awt.Color(255, 255, 255));
-        puntero_noche_1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        puntero_noche_1.setForeground(new java.awt.Color(255, 255, 255));
-        puntero_noche_1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        puntero_noche_1.setText(">>");
-        noche_1.add(puntero_noche_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 70, 40));
-
-        jLabel1.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                jLabel1MouseClicked(evt);
-            }
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel1MouseEntered(evt);
-            }
-            public void mouseExited(java.awt.event.MouseEvent evt) {
-                jLabel1MouseExited(evt);
-            }
-        });
-        noche_1.add(jLabel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 220, 40));
-
-        admin.add(noche_1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 220, 220, 40));
-
-        jLabel25.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/fondo_titulo.gif"))); // NOI18N
-        admin.add(jLabel25, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        camara.setBackground(new java.awt.Color(0, 0, 0));
-        camara.setMinimumSize(new java.awt.Dimension(1003, 584));
-        camara.setPreferredSize(new java.awt.Dimension(1003, 584));
-        camara.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel49.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel49.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel49.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/closecam.png"))); // NOI18N
-        jLabel49.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseEntered(java.awt.event.MouseEvent evt) {
-                jLabel49MouseEntered(evt);
-            }
-        });
-        camara.add(jLabel49, new org.netbeans.lib.awtextra.AbsoluteConstraints(200, 510, -1, -1));
-
-        fondo_tiempo1.setBackground(new java.awt.Color(0, 0, 0));
-
-        hora1.setBackground(new java.awt.Color(255, 255, 255));
-        hora1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        hora1.setForeground(new java.awt.Color(255, 255, 255));
-        hora1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        hora1.setText("12");
-
-        jLabel54.setBackground(new java.awt.Color(255, 255, 255));
-        jLabel54.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        jLabel54.setForeground(new java.awt.Color(255, 255, 255));
-        jLabel54.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        jLabel54.setText("AM");
-
-        javax.swing.GroupLayout fondo_tiempo1Layout = new javax.swing.GroupLayout(fondo_tiempo1);
-        fondo_tiempo1.setLayout(fondo_tiempo1Layout);
-        fondo_tiempo1Layout.setHorizontalGroup(
-            fondo_tiempo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(fondo_tiempo1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(hora1)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(jLabel54)
-                .addContainerGap(34, Short.MAX_VALUE))
-        );
-        fondo_tiempo1Layout.setVerticalGroup(
-            fondo_tiempo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(fondo_tiempo1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(fondo_tiempo1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(hora1)
-                    .addComponent(jLabel54))
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        camara.add(fondo_tiempo1, new org.netbeans.lib.awtextra.AbsoluteConstraints(900, 0, -1, 50));
-
-        fondo.setOpaque(false);
-        fondo.setLayout(null);
-
-        titulo_camara.setBackground(new java.awt.Color(255, 255, 255));
-        titulo_camara.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
-        titulo_camara.setForeground(new java.awt.Color(255, 255, 255));
-        titulo_camara.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        titulo_camara.setText("Show Stage");
-        fondo.add(titulo_camara);
-        titulo_camara.setBounds(30, 90, 300, 50);
-
-        jLabel32.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/camlayout2.png"))); // NOI18N
-        fondo.add(jLabel32);
-        jLabel32.setBounds(33, 130, 390, 360);
-
-        cam1A.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cam1AMouseClicked(evt);
-            }
-        });
-        fondo.add(cam1A);
-        cam1A.setBounds(160, 140, 58, 32);
-
-        cam1B.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cam1BMouseClicked(evt);
-            }
-        });
-        fondo.add(cam1B);
-        cam1B.setBounds(140, 198, 56, 30);
-
-        cam5.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cam5MouseClicked(evt);
-            }
-        });
-        fondo.add(cam5);
-        cam5.setBounds(35, 225, 50, 30);
-
-        cam1c.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cam1cMouseClicked(evt);
-            }
-        });
-        fondo.add(cam1c);
-        cam1c.setBounds(110, 270, 50, 40);
-
-        cam3.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cam3MouseClicked(evt);
-            }
-        });
-        fondo.add(cam3);
-        cam3.setBounds(73, 371, 58, 40);
-
-        cam2a.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cam2aMouseClicked(evt);
-            }
-        });
-        fondo.add(cam2a);
-        cam2a.setBounds(156, 389, 57, 33);
-
-        cam2b.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cam2bMouseClicked(evt);
-            }
-        });
-        fondo.add(cam2b);
-        cam2b.setBounds(154, 428, 59, 34);
-
-        cam4b.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cam4bMouseClicked(evt);
-            }
-        });
-        fondo.add(cam4b);
-        cam4b.setBounds(261, 431, 57, 34);
-
-        cam4A.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cam4AMouseClicked(evt);
-            }
-        });
-        fondo.add(cam4A);
-        cam4A.setBounds(262, 390, 59, 34);
-
-        cam6.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cam6MouseClicked(evt);
-            }
-        });
-        fondo.add(cam6);
-        cam6.setBounds(362, 352, 60, 40);
-
-        cam7.addMouseListener(new java.awt.event.MouseAdapter() {
-            public void mouseClicked(java.awt.event.MouseEvent evt) {
-                cam7MouseClicked(evt);
-            }
-        });
-        fondo.add(cam7);
-        cam7.setBounds(370, 225, 51, 34);
-
-        camara.add(fondo, new org.netbeans.lib.awtextra.AbsoluteConstraints(580, 80, 420, 500));
-
-        bateria.setOpaque(false);
-        bateria.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        titulo_camara1.setBackground(new java.awt.Color(255, 255, 255));
-        titulo_camara1.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
-        titulo_camara1.setForeground(new java.awt.Color(255, 255, 255));
-        titulo_camara1.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        bateria.add(titulo_camara1, new org.netbeans.lib.awtextra.AbsoluteConstraints(120, 20, 80, 32));
-
-        titulo_camara2.setBackground(new java.awt.Color(255, 255, 255));
-        titulo_camara2.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
-        titulo_camara2.setForeground(new java.awt.Color(255, 255, 255));
-        titulo_camara2.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        titulo_camara2.setText("Power left:");
-        bateria.add(titulo_camara2, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 24, 176, 32));
-
-        titulo_camara3.setBackground(new java.awt.Color(255, 255, 255));
-        titulo_camara3.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
-        titulo_camara3.setForeground(new java.awt.Color(255, 255, 255));
-        titulo_camara3.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        titulo_camara3.setText("Usage:");
-        bateria.add(titulo_camara3, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 60, -1, 32));
-
-        titulo_camara4.setBackground(new java.awt.Color(255, 255, 255));
-        titulo_camara4.setFont(new java.awt.Font("Monospaced", 1, 18)); // NOI18N
-        titulo_camara4.setForeground(new java.awt.Color(255, 255, 255));
-        titulo_camara4.setHorizontalAlignment(javax.swing.SwingConstants.LEFT);
-        bateria.add(titulo_camara4, new org.netbeans.lib.awtextra.AbsoluteConstraints(70, 60, 130, 32));
-
-        camara.add(bateria, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 490, 200, -1));
-
-        restrooms.setOpaque(false);
-        restrooms.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel47.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam7empty.png"))); // NOI18N
-        restrooms.add(jLabel47, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        camara.add(restrooms, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        show_stage.setOpaque(false);
-        show_stage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel34.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam1a.jpg"))); // NOI18N
-        show_stage.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        camara.add(show_stage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        kitchen.setOpaque(false);
-        kitchen.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel48.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam6.png"))); // NOI18N
-        kitchen.add(jLabel48, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        camara.add(kitchen, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        east_hall_corner.setOpaque(false);
-        east_hall_corner.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel46.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam4Bempty.png"))); // NOI18N
-        east_hall_corner.add(jLabel46, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        camara.add(east_hall_corner, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        east_hall.setOpaque(false);
-        east_hall.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel45.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam4Aempty.png"))); // NOI18N
-        east_hall.add(jLabel45, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        camara.add(east_hall, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        west_hall_corner.setOpaque(false);
-        west_hall_corner.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        golden_cam.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam2bempty.png"))); // NOI18N
-        west_hall_corner.add(golden_cam, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        camara.add(west_hall_corner, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        west_hall.setOpaque(false);
-        west_hall.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam2aempty.png"))); // NOI18N
-        west_hall.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        camara.add(west_hall, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        supply_closet.setOpaque(false);
-        supply_closet.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel42.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam3empty.png"))); // NOI18N
-        supply_closet.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        camara.add(supply_closet, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        pirate_cave.setOpaque(false);
-        pirate_cave.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel41.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam1cempty.png"))); // NOI18N
-        pirate_cave.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        camara.add(pirate_cave, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        backstage.setOpaque(false);
-        backstage.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel40.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam5empty.png"))); // NOI18N
-        backstage.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        camara.add(backstage, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        Dining_area.setOpaque(false);
-        Dining_area.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
-
-        jLabel39.setIcon(new javax.swing.ImageIcon(getClass().getResource("/camaras/cam1Bempty.png"))); // NOI18N
-        Dining_area.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
-
-        camara.add(Dining_area, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
 
         gif_camara_salida.setBackground(new java.awt.Color(0, 0, 0));
         gif_camara_salida.setMinimumSize(new java.awt.Dimension(1003, 584));
@@ -1327,6 +1389,135 @@ public class main extends javax.swing.JFrame {
         entradaC.setIcon(new javax.swing.ImageIcon(getClass().getResource("/gif_monitor/monitor.gif"))); // NOI18N
         gif_camara_entrada.add(entradaC, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 1000, 580));
 
+        Nightmare.setBackground(new java.awt.Color(0, 0, 0));
+        Nightmare.setMinimumSize(new java.awt.Dimension(1003, 584));
+        Nightmare.setPreferredSize(new java.awt.Dimension(1003, 584));
+        Nightmare.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                NightmareMouseClicked(evt);
+            }
+        });
+        Nightmare.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jPanel9.setBackground(new java.awt.Color(0, 0, 0));
+        jPanel9.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel30.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel30.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        jLabel30.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel30.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel30.setText("Five Nights at Freddy’s ");
+        jPanel9.add(jLabel30, new org.netbeans.lib.awtextra.AbsoluteConstraints(7, 13, -1, -1));
+
+        Nightmare.add(jPanel9, new org.netbeans.lib.awtextra.AbsoluteConstraints(310, 90, 360, 60));
+
+        fondo_salir_elegir.setBackground(new java.awt.Color(0, 0, 0));
+        fondo_salir_elegir.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        e_puntero_s1.setBackground(new java.awt.Color(255, 255, 255));
+        e_puntero_s1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        e_puntero_s1.setForeground(new java.awt.Color(255, 255, 255));
+        e_puntero_s1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        e_puntero_s1.setText(">>");
+        fondo_salir_elegir.add(e_puntero_s1, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 13, 50, 40));
+
+        jLabel34.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel34.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        jLabel34.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel34.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel34.setText("Salir");
+        fondo_salir_elegir.add(jLabel34, new org.netbeans.lib.awtextra.AbsoluteConstraints(10, 3, 160, 60));
+
+        jLabel37.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel37MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel37MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel37MouseExited(evt);
+            }
+        });
+        fondo_salir_elegir.add(jLabel37, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 170, 60));
+
+        Nightmare.add(fondo_salir_elegir, new org.netbeans.lib.awtextra.AbsoluteConstraints(410, 380, 170, 60));
+
+        fondo_crear_perfil1.setBackground(new java.awt.Color(0, 0, 0));
+        fondo_crear_perfil1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        puntero_c1.setBackground(new java.awt.Color(255, 255, 255));
+        puntero_c1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        puntero_c1.setForeground(new java.awt.Color(255, 255, 255));
+        puntero_c1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        puntero_c1.setText(">>");
+        fondo_crear_perfil1.add(puntero_c1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 20, 90, -1));
+
+        jLabel39.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel39.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        jLabel39.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel39.setText("Facil");
+        jLabel39.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel39MouseEntered(evt);
+            }
+        });
+        fondo_crear_perfil1.add(jLabel39, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, -1));
+
+        jLabel40.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel40MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel40MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel40MouseExited(evt);
+            }
+        });
+        fondo_crear_perfil1.add(jLabel40, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 150, 70));
+
+        Nightmare.add(fondo_crear_perfil1, new org.netbeans.lib.awtextra.AbsoluteConstraints(280, 260, -1, 70));
+
+        fondo_iniciar_sesion1.setBackground(new java.awt.Color(0, 0, 0));
+        fondo_iniciar_sesion1.setLayout(new org.netbeans.lib.awtextra.AbsoluteLayout());
+
+        jLabel41.setBackground(new java.awt.Color(255, 255, 255));
+        jLabel41.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        jLabel41.setForeground(new java.awt.Color(255, 255, 255));
+        jLabel41.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel41.setText("Nightmare");
+        fondo_iniciar_sesion1.add(jLabel41, new org.netbeans.lib.awtextra.AbsoluteConstraints(40, 20, -1, -1));
+
+        puntero_in1.setBackground(new java.awt.Color(255, 255, 255));
+        puntero_in1.setFont(new java.awt.Font("Monospaced", 1, 24)); // NOI18N
+        puntero_in1.setForeground(new java.awt.Color(255, 255, 255));
+        puntero_in1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        puntero_in1.setText(">>");
+        fondo_iniciar_sesion1.add(puntero_in1, new org.netbeans.lib.awtextra.AbsoluteConstraints(-20, 20, 90, -1));
+
+        jLabel42.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                jLabel42MouseClicked(evt);
+            }
+            public void mouseEntered(java.awt.event.MouseEvent evt) {
+                jLabel42MouseEntered(evt);
+            }
+            public void mouseExited(java.awt.event.MouseEvent evt) {
+                jLabel42MouseExited(evt);
+            }
+        });
+        fondo_iniciar_sesion1.add(jLabel42, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 180, 70));
+
+        Nightmare.add(fondo_iniciar_sesion1, new org.netbeans.lib.awtextra.AbsoluteConstraints(540, 260, 190, 70));
+
+        jLabel43.setIcon(new javax.swing.ImageIcon(getClass().getResource("/imagenes/prueba.gif"))); // NOI18N
+        jLabel43.setMaximumSize(new java.awt.Dimension(860, 433));
+        jLabel43.setMinimumSize(new java.awt.Dimension(860, 433));
+        jLabel43.setPreferredSize(new java.awt.Dimension(860, 433));
+        Nightmare.add(jLabel43, new org.netbeans.lib.awtextra.AbsoluteConstraints(60, 50, 880, 480));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -1335,7 +1526,7 @@ public class main extends javax.swing.JFrame {
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(elige, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Elige, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
@@ -1365,11 +1556,6 @@ public class main extends javax.swing.JFrame {
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(oficina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(gif_camara_entrada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1381,6 +1567,21 @@ public class main extends javax.swing.JFrame {
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(gif_camara_salida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jumpscare, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(oficina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Nightmare, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
         layout.setVerticalGroup(
@@ -1389,7 +1590,7 @@ public class main extends javax.swing.JFrame {
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(elige, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(Elige, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
@@ -1419,11 +1620,6 @@ public class main extends javax.swing.JFrame {
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
-                    .addComponent(oficina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addGap(0, 0, Short.MAX_VALUE)))
-            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                .addGroup(layout.createSequentialGroup()
-                    .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(gif_camara_entrada, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
             .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -1435,6 +1631,21 @@ public class main extends javax.swing.JFrame {
                 .addGroup(layout.createSequentialGroup()
                     .addGap(0, 0, Short.MAX_VALUE)
                     .addComponent(gif_camara_salida, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(jumpscare, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(oficina, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addGap(0, 0, Short.MAX_VALUE)))
+            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                .addGroup(layout.createSequentialGroup()
+                    .addGap(0, 0, Short.MAX_VALUE)
+                    .addComponent(Nightmare, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGap(0, 0, Short.MAX_VALUE)))
         );
 
@@ -1458,24 +1669,26 @@ public class main extends javax.swing.JFrame {
     }//GEN-LAST:event_jLabel11MouseExited
 
     private void jLabel11MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel11MouseClicked
-        elige.setVisible(false);
+        Elige.setVisible(false);
         iniciar.setVisible(true);
     }//GEN-LAST:event_jLabel11MouseClicked
 
     private void c_backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_c_backActionPerformed
         crear.setVisible(false);
-        elige.setVisible(true);
+        Elige.setVisible(true);
         c_usuario1.setText("");
         c_contrasena.setText("");
     }//GEN-LAST:event_c_backActionPerformed
 
     private void i_backActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_i_backActionPerformed
         iniciar.setVisible(false);
-        elige.setVisible(true);
+        Elige.setVisible(true);
+        i_contrasena.setText("");
+        i_contrasena.setText("");
     }//GEN-LAST:event_i_backActionPerformed
 
     private void jLabel9MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel9MouseClicked
-        elige.setVisible(false);
+        Elige.setVisible(false);
         crear.setVisible(true);
     }//GEN-LAST:event_jLabel9MouseClicked
 
@@ -1505,7 +1718,7 @@ public class main extends javax.swing.JFrame {
 
     private void posicion_s1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_posicion_s1MouseClicked
         menu.setVisible(false);
-        elige.setVisible(true);
+        Elige.setVisible(true);
     }//GEN-LAST:event_posicion_s1MouseClicked
 
     private void posicion_s1MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_posicion_s1MouseEntered
@@ -1599,7 +1812,7 @@ public class main extends javax.swing.JFrame {
         west_hall.setVisible(false);
         west_hall_corner.setVisible(false);
         supply_closet.setVisible(false);
-        pirate_cave.setVisible(false);
+        pirate_cove.setVisible(false);
         backstage.setVisible(false);
         Dining_area.setVisible(false);
         titulo_camara.setText("Show Stage");
@@ -1616,7 +1829,7 @@ public class main extends javax.swing.JFrame {
         west_hall.setVisible(false);
         west_hall_corner.setVisible(false);
         supply_closet.setVisible(false);
-        pirate_cave.setVisible(false);
+        pirate_cove.setVisible(false);
         backstage.setVisible(false);
         Dining_area.setVisible(true);
         titulo_camara.setText("Dining Area");
@@ -1633,7 +1846,7 @@ public class main extends javax.swing.JFrame {
         west_hall.setVisible(false);
         west_hall_corner.setVisible(false);
         supply_closet.setVisible(false);
-        pirate_cave.setVisible(false);
+        pirate_cove.setVisible(false);
         backstage.setVisible(true);
         Dining_area.setVisible(false);
         titulo_camara.setText("Backstage");
@@ -1650,7 +1863,7 @@ public class main extends javax.swing.JFrame {
         west_hall.setVisible(false);
         west_hall_corner.setVisible(false);
         supply_closet.setVisible(false);
-        pirate_cave.setVisible(true);
+        pirate_cove.setVisible(true);
         backstage.setVisible(false);
         Dining_area.setVisible(false);
         titulo_camara.setText("Pirate Cove");
@@ -1667,7 +1880,7 @@ public class main extends javax.swing.JFrame {
         west_hall.setVisible(false);
         west_hall_corner.setVisible(false);
         supply_closet.setVisible(true);
-        pirate_cave.setVisible(false);
+        pirate_cove.setVisible(false);
         backstage.setVisible(false);
         Dining_area.setVisible(false);
         titulo_camara.setText("Supply Closet");
@@ -1684,7 +1897,7 @@ public class main extends javax.swing.JFrame {
         west_hall.setVisible(true);
         west_hall_corner.setVisible(false);
         supply_closet.setVisible(false);
-        pirate_cave.setVisible(false);
+        pirate_cove.setVisible(false);
         backstage.setVisible(false);
         Dining_area.setVisible(false);
         titulo_camara.setText("West Hall");
@@ -1693,11 +1906,9 @@ public class main extends javax.swing.JFrame {
     private void cam2bMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_cam2bMouseClicked
         audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\Blip.wav");
         a.start();
-        if (west_hall_corner.isVisible()) {
-            if (noche == 2 || noche == 4 || noche == 5 && golden != 0) {
-                Golden_Freddy gf = new Golden_Freddy(noche, golden_cam, label_oficina);
-                gf.start();
-            }
+        if (noche == 2 || noche == 4 || noche == 5 && golden != 0) {
+            Golden_Freddy gf = new Golden_Freddy(golden, vivo, noche, LabelWestHallCorner, label_oficina, oficina, LabelJumpScare, jumpscare);
+            gf.start();
         }
         show_stage.setVisible(false);
         restrooms.setVisible(false);
@@ -1707,7 +1918,7 @@ public class main extends javax.swing.JFrame {
         west_hall.setVisible(false);
         west_hall_corner.setVisible(true);
         supply_closet.setVisible(false);
-        pirate_cave.setVisible(false);
+        pirate_cove.setVisible(false);
         backstage.setVisible(false);
         Dining_area.setVisible(false);
         titulo_camara.setText("W. Hall Corner");
@@ -1725,7 +1936,7 @@ public class main extends javax.swing.JFrame {
         west_hall.setVisible(false);
         west_hall_corner.setVisible(false);
         supply_closet.setVisible(false);
-        pirate_cave.setVisible(false);
+        pirate_cove.setVisible(false);
         backstage.setVisible(false);
         Dining_area.setVisible(false);
         titulo_camara.setText("E. Hall Corner");
@@ -1742,7 +1953,7 @@ public class main extends javax.swing.JFrame {
         west_hall.setVisible(false);
         west_hall_corner.setVisible(false);
         supply_closet.setVisible(false);
-        pirate_cave.setVisible(false);
+        pirate_cove.setVisible(false);
         backstage.setVisible(false);
         Dining_area.setVisible(false);
         titulo_camara.setText("East Hall");
@@ -1759,7 +1970,7 @@ public class main extends javax.swing.JFrame {
         west_hall.setVisible(false);
         west_hall_corner.setVisible(false);
         supply_closet.setVisible(false);
-        pirate_cave.setVisible(false);
+        pirate_cove.setVisible(false);
         backstage.setVisible(false);
         Dining_area.setVisible(false);
         titulo_camara.setText("Kitchen");
@@ -1776,7 +1987,7 @@ public class main extends javax.swing.JFrame {
         west_hall.setVisible(false);
         west_hall_corner.setVisible(false);
         supply_closet.setVisible(false);
-        pirate_cave.setVisible(false);
+        pirate_cove.setVisible(false);
         backstage.setVisible(false);
         Dining_area.setVisible(false);
         titulo_camara.setText("Restrooms");
@@ -1792,6 +2003,7 @@ public class main extends javax.swing.JFrame {
             a.start();
             puerta.start();
             puerta_i = false;
+            ba.setPuertaIzq(puerta_i);
             botones_i();
         } else if (!puerta_i) {
             //cerrada
@@ -1799,25 +2011,32 @@ public class main extends javax.swing.JFrame {
             a.start();
             puerta.start();
             puerta_i = true;
+            ba.setPuertaIzq(puerta_i);
             botones_i();
         }
     }//GEN-LAST:event_door_izquierdaMouseClicked
 
     private void light_izquierdaMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_light_izquierdaMouseClicked
         //luz izquierda
-        audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\light.wav");
-        a.start();
-        if (!luz_izquierda) {
-            luz_izquierda = true;
-            botones_i();
-            if (luz_derecho) {
-                luz_derecho = false;
+        double bateria = Double.parseDouble(OficinaPorcentaje.getText());
+        if (bateria > 0) {
+            audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\light.wav");
+            a.start();
+            if (!luz_izquierda) {
+                luz_izquierda = true;
+                ba.setLuzIzq(luz_izquierda);
+                botones_i();
+                if (luz_derecho) {
+                    luz_derecho = false;
+                    ba.setLuzD(luz_derecho);
+                }
+                label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\oficina\\leftlighton.png"));
+            } else {
+                luz_izquierda = false;
+                ba.setLuzIzq(luz_izquierda);
+                botones_i();
+                label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\src\\oficina\\office.jpg"));
             }
-            label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\oficina\\leftlighton.png"));
-        } else {
-            luz_izquierda = false;
-            botones_i();
-            label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\src\\oficina\\office.jpg"));
         }
     }//GEN-LAST:event_light_izquierdaMouseClicked
 
@@ -1827,13 +2046,16 @@ public class main extends javax.swing.JFrame {
         a.start();
         if (!luz_derecho) {
             luz_derecho = true;
+            ba.setLuzD(luz_derecho);
             botones_d();
             if (luz_izquierda) {
                 luz_izquierda = false;
+                ba.setLuzIzq(luz_izquierda);
             }
             label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\oficina\\rightlighton.png"));
         } else {
             luz_derecho = false;
+            ba.setLuzD(luz_derecho);
             botones_d();
             label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\src\\oficina\\office.jpg"));
         }
@@ -1873,6 +2095,7 @@ public class main extends javax.swing.JFrame {
             a.start();
             puerta.start();
             puerta_d = false;
+            ba.setPuertaD(puerta_d);
             botones_d();
         } else if (!puerta_d) {
             //cerrada
@@ -1880,6 +2103,7 @@ public class main extends javax.swing.JFrame {
             a.start();
             puerta.start();
             puerta_d = true;
+            ba.setPuertaD(puerta_d);
             botones_d();
         }
     }//GEN-LAST:event_door_derechaMouseClicked
@@ -1891,6 +2115,9 @@ public class main extends javax.swing.JFrame {
     private void jLabel1MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel1MouseClicked
         admin.setVisible(false);
         oficina.setVisible(true);
+        ba = new bateria(puerta_d, puerta_i, luz_derecho, luz_izquierda, en_camaras, bateriaCam, porcentajeCam, OficinaPorcentaje, BateriaOficina);
+        ba.start();
+        
     }//GEN-LAST:event_jLabel1MouseClicked
 
     private void jLabel50MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel50MouseEntered
@@ -1903,6 +2130,7 @@ public class main extends javax.swing.JFrame {
             g.start();
             a.start();
             en_camaras = true;
+            ba.setCamara(en_camaras);
         }
     }//GEN-LAST:event_jLabel50MouseEntered
 
@@ -1916,6 +2144,7 @@ public class main extends javax.swing.JFrame {
             g.start();
             a.start();
             en_camaras = false;
+            ba.setCamara(en_camaras);
         }
     }//GEN-LAST:event_jLabel49MouseEntered
 
@@ -1923,6 +2152,81 @@ public class main extends javax.swing.JFrame {
         audio a = new audio("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\sonidos\\freddynose.wav");
         a.start();
     }//GEN-LAST:event_narizMouseClicked
+
+    private void jLabel69MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel69MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel69MouseEntered
+
+    private void jLabel69MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel69MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel69MouseExited
+
+    private void jLabel37MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel37MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel37MouseClicked
+
+    private void jLabel37MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel37MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel37MouseEntered
+
+    private void jLabel37MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel37MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel37MouseExited
+
+    private void jLabel40MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel40MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel40MouseClicked
+
+    private void jLabel40MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel40MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel40MouseEntered
+
+    private void jLabel40MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel40MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel40MouseExited
+
+    private void jLabel42MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel42MouseClicked
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel42MouseClicked
+
+    private void jLabel42MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel42MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel42MouseEntered
+
+    private void jLabel42MouseExited(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel42MouseExited
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel42MouseExited
+
+    private void jLabel39MouseEntered(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel39MouseEntered
+        // TODO add your handling code here:
+    }//GEN-LAST:event_jLabel39MouseEntered
+
+    private void jLabel16MouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_jLabel16MouseClicked
+    }//GEN-LAST:event_jLabel16MouseClicked
+
+    private void NightmareMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_NightmareMouseClicked
+        System.exit(0);
+    }//GEN-LAST:event_NightmareMouseClicked
+
+    private void noche() {
+        switch (1) {
+            case 1 -> {
+
+            }
+            case 2 -> {
+
+            }
+            case 3 -> {
+
+            }
+            case 4 -> {
+
+            }
+            case 5 -> {
+
+            }
+        }
+    }
 
     public static boolean iniciar(String usuario, String contra) {
         AdminJugador aj = new AdminJugador("FiveNights.fnaf");
@@ -1979,6 +2283,84 @@ public class main extends javax.swing.JFrame {
         }
     }
 
+    private void armar() {
+        label_oficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\oficina\\office.jpg"));
+        fondo_botones_derecho.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones derechos\\boton_puerta_derecha.png"));
+        fondo_botones_izqui.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\botones izquierdos\\leftdoorbuttons.png"));
+        LabelWestHallCorner.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\camaras\\cam2bempty.png"));
+        menu_jugador.setVisible(false);
+        e_puntero_s.setText("");
+        menu.setVisible(false);
+        oficina.setVisible(false);
+        camara.setVisible(false);
+        Dining_area.setVisible(false);
+        backstage.setVisible(false);
+        pirate_cove.setVisible(false);
+        supply_closet.setVisible(false);
+        west_hall.setVisible(false);
+        west_hall_corner.setVisible(false);
+        east_hall.setVisible(false);
+        east_hall_corner.setVisible(false);
+        kitchen.setVisible(false);
+        restrooms.setVisible(false);
+        iniciar.setVisible(false);
+        crear.setVisible(false);
+        admin.setVisible(false);
+        Elige.setVisible(true);
+        oficina.setVisible(false);
+        Nightmare.setVisible(false);
+        this.setLocation(250, 100);
+        puntero_j1.setText("");
+        puntero_c.setText("");
+        puntero_in.setText("");
+        puntero_s1.setText("");
+        puntero_l1.setText("");
+        puntero_noche_1.setText("");
+        puntero_noche_2.setText("");
+        puntero_noche_3.setText("");
+        puntero_noche_4.setText("");
+        puntero_noche_perso.setText("");
+        gif_camara_entrada.setVisible(false);
+        gif_camara_salida.setVisible(false);
+        jumpscare.setVisible(false);
+        if (puerta_d) {
+            fondo_puerta_derecha.setVisible(false);
+        }
+        if (puerta_i) {
+            fondo_puerta_iquierda.setVisible(false);
+        }
+
+    }
+
+    private void ArmarCamaras() {
+        bateriaCam.setText("100.00");
+        bateriaCam.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\bateria\\green.jpg"));
+        BateriaOficina.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\bateria\\green.jpg"));
+        LabelWestHallCorner.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\camaras\\Vacio\\cam2bempty.png"));
+        LabelWestHall.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\camaras\\Vacio\\cam2aempty.png"));
+        LabelSupplyCloset.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\camaras\\Vacio\\cam3empty.png"));
+        LabelShowStage.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\camaras\\Vacio\\cam1a.jpg"));
+        LabelRestrooms.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\camaras\\Vacio\\cam7empty.png"));
+        LabelPirateCove.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\camaras\\Vacio\\cam1cempty.png"));
+        LabelKitchen.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\camaras\\Vacio\\cam6.png"));
+        LabelEastHallCorner.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\camaras\\Vacio\\cam4Bempty.png"));
+        LabelEastHall.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\camaras\\Vacio\\cam4Aempty.png"));
+        LabelDinnigArea.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\camaras\\Vacio\\cam1Bempty.png"));
+        LabelBackStage.setIcon(new ImageIcon("C:\\Users\\Luis Andres Varela\\Desktop\\archivo de proyecto\\Five Nights at Freddy’s\\--fnaf 1--\\camaras\\Vacio\\cam5empty.png"));
+        show_stage.setVisible(true);
+        restrooms.setVisible(false);
+        kitchen.setVisible(false);
+        east_hall.setVisible(false);
+        east_hall_corner.setVisible(false);
+        west_hall.setVisible(false);
+        west_hall_corner.setVisible(false);
+        supply_closet.setVisible(false);
+        pirate_cove.setVisible(false);
+        backstage.setVisible(false);
+        Dining_area.setVisible(false);
+        titulo_camara.setText("Show Stage");
+    }
+
     public static boolean nombre_unico(String nombre) {
         AdminJugador aj = new AdminJugador("FiveNights.fnaf");
         aj.cargarArchivo();
@@ -2021,7 +2403,16 @@ public class main extends javax.swing.JFrame {
             }
         });
     }
-    public int golden;
+    public boolean vivo = true;
+    public int golden=0;
+    public int Ubifoxy=0;
+    public int AIfoxy=0;
+    public int UbiFreddy=0;
+    public int AIFreddy=0;
+    public int UbiChica=0;
+    public int AIChica=0;
+    public int UbiBonnie=0;
+    public int AIBonnie=0;
     /*
     0 es para desactivado
      */
@@ -2044,13 +2435,35 @@ public class main extends javax.swing.JFrame {
     luz= true; encendida
     
      */
+    bateria ba;
     // Variables declaration - do not modify//GEN-BEGIN:variables
+    private javax.swing.JLabel BateriaOficina;
     private javax.swing.JPanel Dining_area;
+    private javax.swing.JPanel Elige;
+    private javax.swing.JPanel FondoCrear;
+    private javax.swing.JPanel FondoIniciar;
+    private javax.swing.JLabel LabelBackStage;
+    private javax.swing.JLabel LabelDinnigArea;
+    private javax.swing.JLabel LabelEastHall;
+    private javax.swing.JLabel LabelEastHallCorner;
+    private javax.swing.JLabel LabelJumpScare;
+    private javax.swing.JLabel LabelKitchen;
+    private javax.swing.JLabel LabelPirateCove;
+    private javax.swing.JLabel LabelRestrooms;
+    private javax.swing.JLabel LabelShowStage;
+    private javax.swing.JLabel LabelSupplyCloset;
+    private javax.swing.JLabel LabelWestHall;
+    private javax.swing.JLabel LabelWestHallCorner;
     private javax.swing.JLabel Label_puerta_dere;
+    private javax.swing.JPanel Nightmare;
+    private javax.swing.JPanel NochePersonalizada;
     private javax.swing.JPanel Nueva_partida;
+    private javax.swing.JLabel OficinaPorcentaje;
     private javax.swing.JPanel admin;
     private javax.swing.JPanel backstage;
     private javax.swing.JPanel bateria;
+    private javax.swing.JPanel bateria1;
+    private javax.swing.JLabel bateriaCam;
     private javax.swing.JButton c_back;
     private javax.swing.JTextField c_contrasena;
     private javax.swing.JButton c_listo;
@@ -2072,26 +2485,26 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel door_derecha;
     private javax.swing.JLabel door_izquierda;
     private javax.swing.JLabel e_puntero_s;
+    private javax.swing.JLabel e_puntero_s1;
     private javax.swing.JPanel east_hall;
     private javax.swing.JPanel east_hall_corner;
-    private javax.swing.JPanel elige;
     private javax.swing.JLabel entradaC;
     private javax.swing.JPanel fondo;
     private javax.swing.JLabel fondo_botones_derecho;
     private javax.swing.JLabel fondo_botones_izqui;
-    private javax.swing.JPanel fondo_crear_perfil;
-    private javax.swing.JPanel fondo_iniciar_sesion;
+    private javax.swing.JPanel fondo_crear_perfil1;
+    private javax.swing.JPanel fondo_iniciar_sesion1;
     private javax.swing.JPanel fondo_jugar;
     private javax.swing.JPanel fondo_logros;
     private javax.swing.JPanel fondo_puerta_derecha;
     private javax.swing.JPanel fondo_puerta_iquierda;
     private javax.swing.JPanel fondo_s;
     private javax.swing.JPanel fondo_salir;
+    private javax.swing.JPanel fondo_salir_elegir;
     private javax.swing.JPanel fondo_tiempo;
     private javax.swing.JPanel fondo_tiempo1;
     private javax.swing.JPanel gif_camara_entrada;
     private javax.swing.JPanel gif_camara_salida;
-    private javax.swing.JLabel golden_cam;
     private javax.swing.JLabel hora;
     private javax.swing.JLabel hora1;
     private javax.swing.JButton i_back;
@@ -2122,12 +2535,14 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
     private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel31;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
     private javax.swing.JLabel jLabel34;
     private javax.swing.JLabel jLabel35;
     private javax.swing.JLabel jLabel36;
+    private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
     private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
@@ -2135,10 +2550,6 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel41;
     private javax.swing.JLabel jLabel42;
     private javax.swing.JLabel jLabel43;
-    private javax.swing.JLabel jLabel45;
-    private javax.swing.JLabel jLabel46;
-    private javax.swing.JLabel jLabel47;
-    private javax.swing.JLabel jLabel48;
     private javax.swing.JLabel jLabel49;
     private javax.swing.JLabel jLabel5;
     private javax.swing.JLabel jLabel50;
@@ -2153,6 +2564,8 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel65;
     private javax.swing.JLabel jLabel66;
     private javax.swing.JLabel jLabel67;
+    private javax.swing.JLabel jLabel68;
+    private javax.swing.JLabel jLabel69;
     private javax.swing.JLabel jLabel7;
     private javax.swing.JLabel jLabel70;
     private javax.swing.JLabel jLabel8;
@@ -2165,6 +2578,8 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JPanel jPanel20;
     private javax.swing.JPanel jPanel7;
     private javax.swing.JPanel jPanel8;
+    private javax.swing.JPanel jPanel9;
+    private javax.swing.JPanel jumpscare;
     private javax.swing.JPanel kitchen;
     private javax.swing.JLabel label_oficina;
     private javax.swing.JLabel label_puerta_izqui;
@@ -2179,12 +2594,15 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JPanel noche_4;
     private javax.swing.JPanel noche_personalizada;
     private javax.swing.JPanel oficina;
-    private javax.swing.JPanel pirate_cave;
+    private javax.swing.JPanel pirate_cove;
+    private javax.swing.JLabel porcentajeCam;
     private javax.swing.JLabel posicion_j1;
     private javax.swing.JLabel posicion_l1;
     private javax.swing.JLabel posicion_s1;
     private javax.swing.JLabel puntero_c;
+    private javax.swing.JLabel puntero_c1;
     private javax.swing.JLabel puntero_in;
+    private javax.swing.JLabel puntero_in1;
     private javax.swing.JLabel puntero_j1;
     private javax.swing.JLabel puntero_l1;
     private javax.swing.JLabel puntero_noche_1;
@@ -2193,6 +2611,7 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel puntero_noche_4;
     private javax.swing.JLabel puntero_noche_6;
     private javax.swing.JLabel puntero_noche_7;
+    private javax.swing.JLabel puntero_noche_8;
     private javax.swing.JLabel puntero_noche_perso;
     private javax.swing.JLabel puntero_s1;
     private javax.swing.JPanel restrooms;
@@ -2202,10 +2621,10 @@ public class main extends javax.swing.JFrame {
     private javax.swing.JLabel texto_j1;
     private javax.swing.JLabel texto_s1;
     private javax.swing.JLabel titulo_camara;
-    private javax.swing.JLabel titulo_camara1;
     private javax.swing.JLabel titulo_camara2;
     private javax.swing.JLabel titulo_camara3;
-    private javax.swing.JLabel titulo_camara4;
+    private javax.swing.JLabel titulo_camara6;
+    private javax.swing.JLabel titulo_camara7;
     private javax.swing.JPanel west_hall;
     private javax.swing.JPanel west_hall_corner;
     // End of variables declaration//GEN-END:variables

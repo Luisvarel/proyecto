@@ -4,12 +4,21 @@
  */
 package a;
 
+import java.util.Random;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
 /**
  *
  * @author Luis Andres Varela
  */
 public class Bonnie extends Thread {
 
+    private main m;
+    private JPanel PanelOficina;
+    private JLabel LabelJumpscare;
+    private JPanel PanelJumpscare;
+    private JPanel Panelmenu;
     private int noche;
     /*
      noche 1=1
@@ -38,9 +47,23 @@ public class Bonnie extends Thread {
 
     @Override
     public void run() {
+        int OportunidadMovimiento = 0;
+        if (dificultad == 0) {
+            OportunidadMovimiento = 10000;
+        } else if (dificultad == 1) {
+            OportunidadMovimiento = 5000;
+        }
         switch (noche) {
             case 1 -> {
-
+                while (m.vivo) {
+                    try {
+                        Thread.sleep(OportunidadMovimiento);
+                    } catch (InterruptedException ex) {
+                    }
+                    if (true) {
+                        
+                    }
+                }
             }
             case 2 -> {
                 /*
@@ -62,4 +85,8 @@ public class Bonnie extends Thread {
         }
     }
 
+    public int num() {
+        Random ran = new Random();
+        return ran.nextInt(20) + 1;
+    }
 }
